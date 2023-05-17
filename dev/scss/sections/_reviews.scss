@@ -1,4 +1,4 @@
-#reviews {
+#reviews{
     
 
     @include md {
@@ -8,7 +8,7 @@
     }
 
     @include xxl {
-        grid-template-columns: auto 1200px auto;
+        grid-template-columns: auto 1440px auto;
 
     }
 
@@ -29,7 +29,7 @@
     
                         @include lg {
                             grid-area: reviews;
-                            grid-template-columns: repeat(3, 1fr);
+                            grid-template-columns: repeat(6, 1fr);
                             grid-template-areas:
                                 "nt nt nt nt nt nt"
                                 " n1 n1 n2 n2 n3 n3 "
@@ -37,35 +37,6 @@
                         }
     
                     h1{
-                        @include md{
-                            grid-area: nt;
-                        }
-                    }
-
-                    h2{
-                        @include md{
-                            grid-area: nt;
-                        }
-                    }
-
-                    h3{
-                        @include md{
-                            grid-area: nt;
-                        }
-                    }
-
-                    h3{
-                        @include md{
-                            grid-area: nt;
-                        }
-                    }
-                    p{
-                        @include md{
-                            grid-area: nt;
-                        }
-                    }
-
-                    p{
                         @include md{
                             grid-area: nt;
                         }
@@ -78,7 +49,7 @@
                 }
             }
     
-            card {
+            .card {
                 display: grid;
                 grid-template-columns: 16px auto 16px;
                 grid-template-areas: ". card .";
