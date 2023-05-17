@@ -2,4 +2,46 @@
     Base
 ============= */
 
+body{
+    background-color: var(--white);
+}
+ul {
+    margin: 0;
+    padding: 0;
+    li{
+        list-style: none;
+    }
+}
+.content-spacing{
+    padding-top: 16px;
+    @include lg{
+        padding-top: 32px;
+    }
+ }
+ .tent-spacing{
+    padding-bottom: 16px;
+    @include lg{
+        padding-bottom: 32px;
+    }
+ }
+ 
+ 
+ 
 
+.show-large{
+    display: none;
+    @include lg{
+        display: block;
+    }
+}
+
+.show-extra-large{
+    display: none;
+    @include  lg{
+        display: block;
+    }
+}
+
+.large-images{
+    width: 100vw;
+}

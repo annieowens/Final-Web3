@@ -327,6 +327,58 @@ template {
 /* =============
     Base
 ============= */
+body {
+  background-color: var(--white);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+.content-spacing {
+  padding-top: 16px;
+}
+@media (min-width: 1024px) {
+  .content-spacing {
+    padding-top: 32px;
+  }
+}
+
+.tent-spacing {
+  padding-bottom: 16px;
+}
+@media (min-width: 1024px) {
+  .tent-spacing {
+    padding-bottom: 32px;
+  }
+}
+
+.show-large {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .show-large {
+    display: block;
+  }
+}
+
+.show-extra-large {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .show-extra-large {
+    display: block;
+  }
+}
+
+.large-images {
+  width: 100vw;
+}
+
 /* =============
     Typography
 ============= */

@@ -1,0 +1,17 @@
+#hero{
+    background-image: url("img/heroes/a.jpg");
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+
+    @include md{
+        height: 60vh;
+        background-position: top;
+    }
+
+    @include xl{
+        height: 70vh;
+    }
+
+}
