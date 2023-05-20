@@ -66,6 +66,19 @@
                 display: flex;
             }
         }
+
+        #f5{
+            @include md{
+                grid-area: f5;
+            }
+
+            section{
+                display: flex;
+                padding: 16px 24px;
+                margin: 16px 16px;
+                margin-top: 16px;              
+            }
+        }
                
     }
 
