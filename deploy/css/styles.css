@@ -450,8 +450,8 @@ nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav 
 @media (min-width: 768px) {
   #footer > div {
     display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "f1 f2" "f1 f3";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: " f1 f1 f2 f2" "f3 f3 f4 f4" "..f5 f5 ..";
   }
 }
 @media (min-width: 1024px) {
