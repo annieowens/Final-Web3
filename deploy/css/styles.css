@@ -456,8 +456,8 @@ nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav 
 }
 @media (min-width: 1024px) {
   #footer > div {
-    grid-template-columns: repeat(3, 1r);
-    grid-template-areas: "f1 f2 f3";
+    grid-template-columns: repeat(4, 1r);
+    grid-template-areas: " f1 f2 f3 f4";
   }
 }
 @media (min-width: 768px) {
@@ -473,37 +473,22 @@ nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav 
     grid-area: f2;
   }
 }
-#footer > div #f2 form input {
-  border-color: var(black);
-  width: 100%;
-  border-radius: 0;
-  border: none;
-  box-sizing: border-box;
-  padding: 16px 8px;
-}
-#footer > div #f2 form div {
-  text-align: right;
-}
-#footer > div #f2 form div button {
-  margin-top: 16px;
-  border: none;
+#footer > div #f2 section {
+  display: flex;
 }
 @media (min-width: 768px) {
   #footer > div #f3 {
     grid-area: f3;
   }
 }
-#footer > div button {
-  background-color: rgb(134, 188, 157);
-  color: black;
-  border: none;
-  padding: 16px 24px;
-  margin-left: auto;
-  margin-top: 16px;
+#footer > div #f3 section {
+  display: flex;
 }
-#footer > div input {
-  background-color: rgb(250, 250, 250);
-  border: 1px solid rgb(19, 18, 18);
-  color: black;
-  padding: 16px 32px;
+@media (min-width: 768px) {
+  #footer > div #f4 {
+    grid-area: f4;
+  }
+}
+#footer > div #f4 section {
+  display: flex;
 }

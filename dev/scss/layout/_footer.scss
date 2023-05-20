@@ -24,9 +24,9 @@
         }
 
         @include lg{
-            grid-template-columns: repeat(3, 1r) ;
+            grid-template-columns: repeat(4, 1r) ;
             grid-template-areas: 
-            "f1 f2 f3";
+            " f1 f2 f3 f4";
         }
         #f1{
             @include md{
@@ -42,44 +42,30 @@
                 grid-area: f2;
             }
 
-            form{
-                input{
-                    border-color: var(black);
-                    width: 100%;
-                    border-radius: 0;
-                    border: none;
-                    box-sizing: border-box;
-                    padding: 16px 8px ;
-                }
-
-                div{
-                    text-align: right;
-                    button{
-                        margin-top: 16px;
-                        border: none;
-                    }
-                }
+            section{
+                display: flex;
             }
         }
         #f3{
             @include md{
                 grid-area: f3;
             }
+
+            section{
+                display: flex;
+            }
         }
-                button {
-                    background-color: rgb(134, 188, 157);
-                    color: black;
-                    border: none;
-                    padding: 16px 24px;
-                    margin-left: auto;
-                    margin-top: 16px;
-                }
-                input {
-                    background-color: rgb(250, 250, 250);
-                    border: 1px solid rgb(19, 18, 18);
-                    color: black;
-                    padding: 16px 32px;
-                }
+
+        #f4{
+            @include md{
+                grid-area: f4;
+            }
+
+            section{
+                display: flex;
+            }
+        }
+               
     }
 
 }
