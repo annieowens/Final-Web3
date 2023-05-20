@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
-   background-color: #5E6D49;
+   background-color: #EBD381;
 
     @include xxl{
         grid-template-columns: auto 1200px auto;
@@ -35,12 +35,6 @@
 
             section{
                 display: flex;
-
-                img{
-                    color: var(--white);
-                    font-size: rem-calc(20);
-                    margin-right: 16px;
-                }
             }
         }
         #f2{

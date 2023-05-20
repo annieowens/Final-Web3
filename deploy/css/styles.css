@@ -437,7 +437,7 @@ nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav 
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
-  background-color: #5E6D49;
+  background-color: #EBD381;
 }
 @media (min-width: 1440px) {
   #footer {
@@ -467,11 +467,6 @@ nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav 
 }
 #footer > div #f1 section {
   display: flex;
-}
-#footer > div #f1 section img {
-  color: var(--white);
-  font-size: 1.25rem;
-  margin-right: 16px;
 }
 @media (min-width: 768px) {
   #footer > div #f2 {
