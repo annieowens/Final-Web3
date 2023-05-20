@@ -442,43 +442,43 @@ header h1 {
 header > div {
   grid-area: nav;
 }
-header #searchbar {
+header #search {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
   padding: 16px 0;
 }
 @media (min-width: 768px) {
-  header #searchbar {
+  header #search {
     padding: 24px;
   }
 }
-header #searchbar > div {
+header #search > div {
   grid-area: search;
 }
-header #searchbar > div form {
+header #search > div form {
   display: flex;
 }
-header #searchbar > div form input {
+header #search > div form input {
   border: none;
   border-bottom: 1px solid black;
   width: 100%;
   border-radius: 0;
 }
-header #searchbar > div button {
+header #search > div button {
   border: none;
   background-color: #b2c9a5;
   border-radius: 5px;
   padding: 10px 16px;
 }
 @media (min-width: 768px) {
-  header #searchbar > div #header-info {
+  header #search > div #header-info {
     display: flex;
     align-items: left;
     padding: 136px;
   }
 }
-header #searchbar > div #header-info h1 {
+header #search > div #header-info h1 {
   margin-bottom: 16px;
 }
 
