@@ -25,7 +25,7 @@
             @include xxl {
                 grid-template-areas:
                     "g1 g2"
-                    "g1 g3";
+                    "g3 g4";
             }
 
             #g1 {
@@ -43,6 +43,12 @@
             #g3 {
                 @include xxl {
                     grid-area: g3;
+                }
+            }
+
+            #g4 {
+                @include xxl {
+                    grid-area: g4;
                 }
             }
         }
