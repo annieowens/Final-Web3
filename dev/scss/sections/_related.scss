@@ -1,0 +1,105 @@
+/* =============
+    Related
+============= */
+
+#related{
+    
+    @include md {
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". related .";
+    }
+
+    @include xxl {
+        grid-template-columns: auto 1200px auto;
+
+    }
+
+        >div {
+            display: grid;
+            gap: 16px;
+            
+    
+            @include md {
+                    grid-area: articles;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid-template-areas:
+                        " b1 b1 b2 b2"
+                        "b3 b3 b4 b4"
+                        "..b5 b5 ..";
+                }
+    
+                        @include lg {
+                            grid-area: articles;
+                            grid-template-columns: repeat(4, 1fr);
+                            grid-template-areas:
+                                "nt nt nt nt nt nt nt nt"
+                                " b1 b1 b2 b2 b3 b3 b4 b4";
+                        }
+    
+                    b1{
+                        @include md{
+                            grid-area: nt;
+                        }
+                    }
+                    
+            section {
+    
+                img {
+                    width: 100%;
+                }
+            }
+    
+            .cards {
+                display: grid;
+                grid-template-columns: 16px auto 16px;
+                grid-template-areas: ". cards .";
+                background-color: rgb(159, 182, 174);
+                border-color: #AAB6C5;
+                >div {
+                    grid-area: cards;
+                }
+
+                button{
+                    border: 1px solid black;
+                    background-color: #315984;
+                    border-radius: 5px;
+                    padding: 10px 16px;
+                    margin-top: 12px;
+                    margin-left: 0;
+                    margin-bottom: 12px;
+
+                }
+            }
+    
+        }
+    
+        #b1 {
+            @include md {
+        grid-area: n1;
+            }
+        }
+    
+    
+        #b2 {
+            @include md {
+                grid-area: n2;
+            }
+        }
+    
+        #b3 {
+            @include md {
+                grid-area: n3;
+            }
+        }
+    
+        #b4 {
+            @include md {
+                grid-area: n4;
+            }
+        }
+    
+        h1{
+            margin-bottom: 16px;
+        }
+     }
