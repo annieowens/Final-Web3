@@ -2,20 +2,52 @@
     Navigation
 ============= */
 
+html{
+    scroll-behavior: smooth;
+}
+
+
 nav{
+    display: none;
+
+    @include lg{
+        display: block;
+    }
     ul{
+
+        @include lg{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
         li{
+            text-align: right;
+
+            @include lg{
+                margin-left: 16px;
+            }
+
             a:link, a:visited{
-                padding: 24px 36px;
-                border: 1px solid black;
-                color: var(--lightsage);
-                border-radius: 6px;
-                transition: 0.25s;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                display: inline-block;
+                color: black;
+                padding: 16px 0 16px;
+                font-weight: 500;
+
+                @include lg{
+                    padding: 24px 36px;
+                    border: 1px solid var(--gray);
+                    color: var(--gray);
+                    border-radius: 6px;
+                    transition: 0.25s;
+                }
 
                 &:hover, &:active{
-                    background-color: rgb(117, 150, 131);
-                    color: var(--black);
-
+                    @include lg{
+                        background-color: var(--gray);
+                        color: var(--black);
+                    }
                 }
             }
         }

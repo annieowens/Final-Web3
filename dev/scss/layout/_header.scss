@@ -3,71 +3,27 @@
 ============= */
 
 header {
-
-    nav {
-        background-color: var(--sage);
-        // margin-left: auto;
-        // display: flex;
-
-        >div{
-            display: flex;
+    padding: 16px 0;
+    @include xxl{
+        padding: 24px 0;
+    }
+    
+    div{
+        display: flex;
+        button{
+            border: none;
+            background-color: transparent;
         }
-    }
 
-    h1 {
-        margin-bottom: 16px;
-    }
-
-    >div {
-        grid-area: nav;
-    }
-
-    #search{
-        display: grid;
-        grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". search .";
-        padding: 16px 0;
-
-        @include md{
-            padding: 24px;
-        }
-        >div{
-            grid-area: search;
-
-            form{
-                display: flex;
-
-                input{
-                    border: none;
-                    border-bottom: 1px solid black;
-                    width: 100%;
-                    border-radius: 0;
+        nav{
+            margin-left: auto;
+            ul{
+                li{
+                    a{
+                        color: var(--black);
+                    }
                 }
-            }
-
-            button{
-                border: none;
-                background-color: #b2c9a5;
-                border-radius: 5px;
-                padding: 10px 16px;
-            }
-
-            #header-info{
-                @include md{
-                    display: flex;
-                    align-items: left;
-                    padding: 136px;
-                }
-
-                h1{
-                    margin-bottom: 16px;
-                    
-                }
-                
-
             }
         }
     }
-
-
 }

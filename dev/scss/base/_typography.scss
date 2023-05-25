@@ -3,9 +3,21 @@
 ============= */
 
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.main-titles{
+    font-size: rem-calc(40);
+    font-weight: 200;
+
+    @include md{
+        font-size: rem-calc(44);
+    }
+
+    @include lg{
+        font-size: rem-calc(56);
+    }
+}
 
 h1,h2,h3,h4,p{
     margin: 0;

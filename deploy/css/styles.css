@@ -336,6 +336,8 @@ ul {
   padding: 0;
 }
 ul li {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -383,7 +385,22 @@ ul li {
     Typography
 ============= */
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.main-titles {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+@media (min-width: 768px) {
+  .main-titles {
+    font-size: 2.75rem;
+  }
+}
+@media (min-width: 1024px) {
+  .main-titles {
+    font-size: 3.5rem;
+  }
 }
 
 h1, h2, h3, h4, p {
@@ -394,6 +411,11 @@ h1, h2, h3, h4, p {
 /* =============
     Buttons
 ============= */
+button {
+  padding: 0;
+  margin: 0;
+}
+
 /* =============
     Forms
 ============= */
@@ -415,71 +437,79 @@ textarea {
 /* =============
     Navigation
 ============= */
-nav ul li a:link, nav ul li a:visited {
-  padding: 24px 36px;
-  border: 1px solid black;
-  color: var(--lightsage);
-  border-radius: 6px;
-  transition: 0.25s;
+html {
+  scroll-behavior: smooth;
 }
-nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
-  background-color: rgb(117, 150, 131);
-  color: var(--black);
+
+nav {
+  display: none;
+}
+@media (min-width: 1024px) {
+  nav {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+nav ul li {
+  text-align: right;
+}
+@media (min-width: 1024px) {
+  nav ul li {
+    margin-left: 16px;
+  }
+}
+nav ul li a:link, nav ul li a:visited {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: inline-block;
+  color: black;
+  padding: 16px 0 16px;
+  font-weight: 500;
+}
+@media (min-width: 1024px) {
+  nav ul li a:link, nav ul li a:visited {
+    padding: 24px 36px;
+    border: 1px solid var(--gray);
+    color: var(--gray);
+    border-radius: 6px;
+    transition: 0.25s;
+  }
+}
+@media (min-width: 1024px) {
+  nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
+    background-color: var(--gray);
+    color: var(--black);
+  }
 }
 
 /* =============
     Header
 ============= */
-header nav {
-  background-color: var(--sage);
-}
-header nav > div {
-  display: flex;
-}
-header h1 {
-  margin-bottom: 16px;
-}
-header > div {
-  grid-area: nav;
-}
-header #search {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". search .";
+header {
   padding: 16px 0;
 }
-@media (min-width: 768px) {
-  header #search {
-    padding: 24px;
+@media (min-width: 1440px) {
+  header {
+    padding: 24px 0;
   }
 }
-header #search > div {
-  grid-area: search;
-}
-header #search > div form {
+header div {
   display: flex;
 }
-header #search > div form input {
+header div button {
   border: none;
-  border-bottom: 1px solid black;
-  width: 100%;
-  border-radius: 0;
+  background-color: transparent;
 }
-header #search > div button {
-  border: none;
-  background-color: #b2c9a5;
-  border-radius: 5px;
-  padding: 10px 16px;
+header div nav {
+  margin-left: auto;
 }
-@media (min-width: 768px) {
-  header #search > div #header-info {
-    display: flex;
-    align-items: left;
-    padding: 136px;
-  }
-}
-header #search > div #header-info h1 {
-  margin-bottom: 16px;
+header div nav ul li a {
+  color: var(--black);
 }
 
 /* =============
