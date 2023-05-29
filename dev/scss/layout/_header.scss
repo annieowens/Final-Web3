@@ -3,42 +3,44 @@
 ============= */
 
 header {
+
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 40% auto;
     grid-template-areas: 
     "logo dropdown"
-    "nav nav";
+    "nav";
     padding: 16px;
     position: fixed;
     width: 100%;
     background-color:#EBD381;
     box-sizing: border-box;
-    box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
-    padding: 16px 0;
+    padding: 10px 0;
     @include xxl{
         padding: 24px 0;
     }
     
     @include lg{
-        grid-template-areas: "logo nav";
+        grid-template-areas: "logo";
     }
-
+    
     #logo{
         grid-area: logo;
         display: flex;
         align-items: center;
+        margin-top: 16px;
+        margin-left: 24px;
     }
-
+    
     #dropdown{
-        grid-area: burger;
+        grid-area: menu;
         display: flex;
         align-items: center;
         justify-content: flex-end;
-
+    
         @include lg{
             display: none;
         }
-
+    
         button{
             border: none;
             background-color: transparent;
@@ -46,12 +48,47 @@ header {
             font-size: rem-calc(20);
         }
     }
-
+    
     nav{
         grid-area: nav;
+        display: flex;
+        align-items: center;
+        margin-left: 24px;
+    }
+
+    #search{
+        grid-area: search;
+    
+                form{
+                    display: flex;
+                   
+    
+                    input{
+                        border: none;
+                        width: 100%;
+                        border-radius: 0;
+                        padding: 4px 156px;
+                        
+                    }
+                }
+    
+                button{
+                    border: none;
+                    background-color: transparent;
+                    border-radius: 1px;
+                    padding: 4px 16px;
+                }
     }
     
+    #headicon{
+        grid-area: headicon;
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+    }
 }
+
+
 
 
    

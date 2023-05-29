@@ -221,6 +221,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/hero\/a1.png" : {
+      "ft" : 32768,
+      "iS" : 817632,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hero\/a1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/hero\/b.png" : {
       "ft" : 32768,
       "iS" : 539288,
@@ -239,6 +252,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/deploy\/img\/hero\/navbutton.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/hero\/search1.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/hero\/search1.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -625,18 +648,6 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
-    },
-    "\/dev\/scss\/components\/_buttons.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/components\/_buttons-min.css",
-      "oF" : 0,
-      "pg" : 0
     },
     "\/dev\/scss\/components\/_buttons.scss" : {
       "aP" : 0,

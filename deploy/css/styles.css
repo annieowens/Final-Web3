@@ -492,15 +492,14 @@ nav ul li a:link, nav ul li a:visited {
 ============= */
 header {
   display: grid;
-  grid-template-columns: 50% auto;
-  grid-template-areas: "logo dropdown" "nav nav";
+  grid-template-columns: 40% auto;
+  grid-template-areas: "logo dropdown" "nav";
   padding: 16px;
   position: fixed;
   width: 100%;
   background-color: #EBD381;
   box-sizing: border-box;
-  box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
-  padding: 16px 0;
+  padding: 10px 0;
 }
 @media (min-width: 1440px) {
   header {
@@ -509,16 +508,18 @@ header {
 }
 @media (min-width: 1024px) {
   header {
-    grid-template-areas: "logo nav";
+    grid-template-areas: "logo";
   }
 }
 header #logo {
   grid-area: logo;
   display: flex;
   align-items: center;
+  margin-top: 16px;
+  margin-left: 24px;
 }
 header #dropdown {
-  grid-area: burger;
+  grid-area: menu;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -536,6 +537,33 @@ header #dropdown button {
 }
 header nav {
   grid-area: nav;
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+header #search {
+  grid-area: search;
+}
+header #search form {
+  display: flex;
+}
+header #search form input {
+  border: none;
+  width: 100%;
+  border-radius: 0;
+  padding: 4px 156px;
+}
+header #search button {
+  border: none;
+  background-color: transparent;
+  border-radius: 1px;
+  padding: 4px 16px;
+}
+header #headicon {
+  grid-area: headicon;
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
 }
 
 /* =============
@@ -546,6 +574,7 @@ header nav {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
   background-color: #EBD381;
+  padding: 16px;
 }
 @media (min-width: 1440px) {
   #footer {
@@ -559,7 +588,7 @@ header nav {
   #footer > div {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: " f1 f1 f2 f2" "f3 f3 f4 f4" "..f5 f5 ..";
+    grid-template-areas: " f1 f2 f3 f4";
   }
 }
 @media (min-width: 1024px) {
