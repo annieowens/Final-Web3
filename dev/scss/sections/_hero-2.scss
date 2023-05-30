@@ -1,0 +1,33 @@
+/* =============
+    Hero-2
+============= */
+
+#hero-2{
+    background-image: url("../img/hero-2/hend.png");
+    background-size: cover;
+    background-position: 70% bottom;
+    height: 65vh;
+
+    @include md{
+        height: 70vh;
+        background-position: 90% bottom;
+    }
+
+    @include lg{
+        height: 80vh;
+        background-position: center;
+    }
+
+    @include xxl{
+        height: 100vh;
+    }
+
+    button{
+        border: none;
+        background-color: #315984;
+        font-weight: 700;
+        border-radius: 3px;
+        color: black;
+        padding: 10px 15px;
+    }
+}

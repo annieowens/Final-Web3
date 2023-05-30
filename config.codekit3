@@ -17,6 +17,14 @@
       "oAP" : "\/.gitattributes",
       "oF" : 0
     },
+    "\/deploy\/checkout.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/checkout.html",
+      "oF" : 0
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -91,6 +99,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/cart\/Group 6.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/cart\/Group 6.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/colors\/e.jpg" : {
       "ft" : 16384,
       "iS" : 248668,
@@ -135,6 +153,58 @@
       "iS" : 1822433,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/gallery\/dom.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/gallery\/g10.png" : {
+      "ft" : 32768,
+      "iS" : 459012,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gallery\/g10.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/gallery\/g11.png" : {
+      "ft" : 32768,
+      "iS" : 136255,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gallery\/g11.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/gallery\/g12.png" : {
+      "ft" : 32768,
+      "iS" : 283420,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gallery\/g12.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/gallery\/g13.png" : {
+      "ft" : 32768,
+      "iS" : 575139,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gallery\/g13.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -458,6 +528,45 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/reviews\/p10.png" : {
+      "ft" : 32768,
+      "iS" : 10880,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/reviews\/p10.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/reviews\/p11.png" : {
+      "ft" : 32768,
+      "iS" : 11486,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/reviews\/p11.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/reviews\/p12.png" : {
+      "ft" : 32768,
+      "iS" : 9972,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/reviews\/p12.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/reviews\/thumbsdown.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -497,13 +606,37 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/deploy\/thankyou.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/thankyou.html",
+      "oF" : 0
+    },
+    "\/dev\/checkout.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/checkout.html",
+      "oF" : 2
+    },
+    "\/dev\/checkout\/payment.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/checkout\/payment.html",
+      "oF" : 0
+    },
     "\/dev\/content\/colors.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/colors.html",
-      "oF" : 0
+      "oAP" : "\/deploy\/colors.html",
+      "oF" : 3
     },
     "\/dev\/content\/features.kit" : {
       "cB" : 0,
@@ -511,7 +644,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/features.html",
-      "oF" : 0
+      "oF" : 1
     },
     "\/dev\/content\/gallery.kit" : {
       "cB" : 0,
@@ -519,7 +652,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/gallery.html",
-      "oF" : 0
+      "oF" : 1
     },
     "\/dev\/content\/hero-2.kit" : {
       "cB" : 0,
@@ -527,7 +660,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/hero-2.html",
-      "oF" : 0
+      "oF" : 1
     },
     "\/dev\/content\/hero.kit" : {
       "cB" : 0,
@@ -535,7 +668,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/hero.html",
-      "oF" : 0
+      "oF" : 1
     },
     "\/dev\/content\/related.kit" : {
       "cB" : 0,
@@ -543,7 +676,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/related.html",
-      "oF" : 0
+      "oF" : 1
     },
     "\/dev\/content\/reviews.kit" : {
       "cB" : 0,
@@ -551,7 +684,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/reviews.html",
-      "oF" : 0
+      "oF" : 1
     },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
@@ -612,7 +745,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/scss\/base\/_base.css",
       "oF" : 1,
       "oS" : 0,
@@ -627,7 +760,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/scss\/base\/_normalize.css",
       "oF" : 1,
       "oS" : 0,
@@ -642,12 +775,24 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/scss\/base\/_typography.css",
       "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/dev\/scss\/components\/_buttons.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/components\/_buttons-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/dev\/scss\/components\/_buttons.scss" : {
       "aP" : 0,
@@ -657,12 +802,24 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/scss\/components\/_buttons.css",
       "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/dev\/scss\/components\/_forms.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/components\/_forms-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/dev\/scss\/components\/_forms.scss" : {
       "aP" : 0,
@@ -672,7 +829,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/scss\/components\/_forms.css",
       "oF" : 1,
       "oS" : 0,
@@ -687,12 +844,24 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/scss\/components\/_navigation.css",
       "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/dev\/scss\/helpers\/_mixins.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/helpers\/_mixins-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/dev\/scss\/helpers\/_mixins.scss" : {
       "aP" : 0,
@@ -702,12 +871,24 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/scss\/helpers\/_mixins.css",
       "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/dev\/scss\/helpers\/_variables.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/helpers\/_variables-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/dev\/scss\/helpers\/_variables.scss" : {
       "aP" : 0,
@@ -717,7 +898,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/scss\/helpers\/_variables.css",
       "oF" : 1,
       "oS" : 0,
@@ -732,7 +913,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/scss\/layout\/_footer.css",
       "oF" : 1,
       "oS" : 0,
@@ -747,7 +928,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/scss\/layout\/_header.css",
       "oF" : 1,
       "oS" : 0,
@@ -762,7 +943,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_colors.css",
       "oF" : 1,
       "oS" : 0,
@@ -777,7 +958,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_features.css",
       "oF" : 1,
       "oS" : 0,
@@ -792,7 +973,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_gallery.css",
       "oF" : 1,
       "oS" : 0,
@@ -807,7 +988,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_hero-2.css",
       "oF" : 1,
       "oS" : 0,
@@ -822,7 +1003,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_hero.css",
       "oF" : 1,
       "oS" : 0,
@@ -837,7 +1018,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_related.css",
       "oF" : 1,
       "oS" : 0,
@@ -852,9 +1033,39 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_reviews.css",
       "oF" : 1,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/checkout\/_payment.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/checkout\/_payment.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/thanks\/_main.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/thanks\/_main.css",
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -867,12 +1078,28 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/deploy\/css\/styles.css",
       "oF" : 3,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/dev\/Thank-You\/main.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/deploy\/thankyou.html",
+      "oF" : 3
+    },
+    "\/dev\/thankyou.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/thankyou.html",
+      "oF" : 2
     }
   },
   "hooks" : [

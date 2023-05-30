@@ -1,56 +1,43 @@
-#gallery {
+/* =============
+    Gallery
+============= */
 
-    @include lg {
+#gallery{
+    scroll-margin-top: 70px;
+    margin: 16px;
+
+    @include lg{
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". gallery .";
     }
 
-    ul {
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .gallery img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .gallery .row {
+        flex-basis: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .gallery .row img {
+        flex-basis: 5%;
+      }
 
-        @include lg {
-            grid-area: gallery;
-        }
-
-        li {
-
-            img {
-                width: 100%;
-            }
-
-            @include md {
-                grid-template-areas: 50% auto;
-            }
-
-            @include xxl {
-                grid-template-areas:
-                    "g1 g2"
-                    "g3 g4";
-            }
-
-            #g1 {
-                @include xxl {
-                    grid-area: g1;
-                }
-            }
-
-            #g2 {
-                @include xxl {
-                    grid-area: g2;
-                }
-            }
-
-            #g3 {
-                @include xxl {
-                    grid-area: g3;
-                }
-            }
-
-            #g4 {
-                @include xxl {
-                    grid-area: g4;
-                }
-            }
-        }
+      @include md {
+        grid-template-areas: 50% auto;
     }
+
+    @include xxl {
+        grid-area: galllery;
+    }
+      
 }

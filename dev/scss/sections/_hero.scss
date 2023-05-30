@@ -1,17 +1,33 @@
-#hero{
-    background-image: url("img/heroes/a.jpg");
-    background-size: cover;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
+.image-section {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .overlay1-text {
+    
+    padding: 10px;
+    color: #010101;
+    font-size: 16px;
+  }
+  
+  .overlay1-text h2 {
+    margin: 0;
+  }
 
-    @include md{
-        height: 60vh;
-        background-position: top;
-    }
+  .overlay2-text {
 
-    @include xl{
-        height: 70vh;
-    }
-
-}
+    padding: 10px;
+    color: #010101;
+    font-size: 16px;
+  }
+  
+  .overlay2-text h2 {
+    margin: 0;
+  }
+  

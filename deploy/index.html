@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
     <title>Smeg</title>
@@ -10,89 +12,66 @@
 
 <body>
     <header>
-           <div>
-    
-            <section id="dropdown">
-            <button id="dropdownbutton">
-                <img src="img/hero/navbutton.svg" alt="dropdown">
-            </button>
-            </section>
-            
-            <nav id="menu"> 
-    
-                <section id="logo">
-                    <a href="#"><img src="img/logos/smeglogo.svg" alt="smegl"></a>
-                </section>
-    
-                <ul>
-                    <li>
-                        <a href="#hero">Overview</a>
-                    </li>
-    
-                    <li>
-                        <a href="#features">Features</a>
-                    </li>
-    
-                    <li>
-                        <a href="#colors">Colors</a>
-                    </li>
-    
-                    <li>
-                        <a href="#gallery">Gallery</a>
-                    </li>
-    
-                    <li>
-                        <a href="#related">Related</a>
-                    </li>
-    
-                    <li>
-                        <a href="#reviews">Reviews</a>
-                    </li>
-                </ul>
-    
-                <section id="search">
-                    <div>
-                     <form action="#">
-                        <input type="search" placeholder="Search Our Site">
-                         <button><img src="img/hero/search1.svg"  alt="search button" ></button>
-                     </form>
-                    </div>
-                 </section>
-        
-                 <section id="headicon">
-                    <ul>
-                        <li>
-                            <a href="#"><img src="img/logos/carticon.svg" alt="cart"></a>
-                        </li>
-                        
-                    </ul>
-                 </section>
-                 
-            </nav>
-           </div>
-    </header>
-    
+        <nav id="menu">
+          <section id="logo">
+            <a href="index.html"><img src="img/logos/smeglogo.svg" alt="smegl"></a>
+          </section>
+          <ul>
+            <li>
+              <a href="#hero">Overview</a>
+            </li>
+            <li>
+              <a href="#features">Features</a>
+            </li>
+            <li>
+              <a href="#colors">Colors</a>
+            </li>
+            <li>
+              <a href="#gallery">Gallery</a>
+            </li>
+            <li>
+              <a href="#reviews">Reviews</a>
+            </li>
+            <li>
+              <a href="#related">Related</a>
+            </li>
+          </ul>
+          <section id="search">
+            <form action="#">
+              <input type="search" placeholder="Search ">
+              <button><img src="img/hero/search1.svg" alt="search button"></button>
+            </form>
+          </section>
+          <section id="headicon">
+            <ul>
+              <li>
+                <a href="#checkout"><img src="img/logos/carticon.svg" alt="cart"></a>
+              </li>
+            </ul>
+          </section>
+        </nav>
+      </header>
+      
     <section id="hero" class="content-spacing">
             <img src="img/hero/a1.png" alt="hero">
         </section>
         
         <section>
+          <div class="overlay2-text">
             <h1>Stainless Steel</h1>
-            <h2>Its smooth, sheen-like and non-porous surface means that the likes of dirt, grime and bacteria are extremely easy to clean and sanitise.</h2>
+            <h2>Its smooth, sheen-like and non-porous surface means that the likes of dirt,
+                 grime and bacteria are extremely easy to clean and sanitise.</h2>
+          </div>
         </section>
         
-        <section> 
-            <h1>
-                2 LARGE COMPARTMENTS
-            </h1>
-        </section>
-        <section>
-            <img src="img/hero/b.png" alt="">
-        </section>
-        
-        <section>
-            <h2>Self-centering racks in the compartments to ensure even toasting of slices of bread, whatever size they may be.</h2>
-        </section>
+        <section class="image-section">
+            <img src="img/hero/b.png" alt="views">
+            <div class="overlay1-text">
+              <h2>Self-centering racks in the compartments to ensure even 
+                toasting of slices of bread, whatever size they may be.</h2>
+            </div>
+          </section>
+          
     <section>
                 <h1>AUTOMATIC POP-UP</h1>
                 <h2>When the selected toasting time has finished, the slices pop up automatically.</h2>
@@ -110,30 +89,43 @@
                 <h1>MULTI-FUNCTION INTERFACE</h1>
                 <h2>Six browning levels and three pre-set programs, for reheating, defrosting and bagels.</h2>
             </section>
-    <section>
-                    <img src="img/colors/e.jpg" alt="toast">
-                </section>
-                <section>
-                    <h1>6 Diffrent Colors</h1>
+    <section id="cb">
+                    <h1>6 Different Colors</h1>
                     <h3>Polished Chrome</h3>
+                    <div class="color-container">
+                      <img src="img/colors/e.jpg" alt="toast">
+                      <div class="color-overlay">
+                        <div class="color-circle"></div>
+                        <div class="color-circle"></div>
+                        <div class="color-circle"></div>
+                        <div class="color-circle"></div>
+                        <div class="color-circle"></div>
+                        <div class="color-circle"></div>
+                      </div>
+                    </div>
+                    
+                      
                 </section>
-    <section id="gallery" class="tent-spacing">
-                        <ul>
-                            <li id="g1"><img src="img/gallery/dom.png" alt="gal" class="large-images"></li>
-                            <li id="g2"><img src="img/gallery/gall.jpg" alt="gall" class="large-images"></li>
-                            <li id="g3"><img src="img/gallery/him.png" alt="galt" class="large-images"></li>
-                            <li id="g4"><img src="img/gallery/ick.png" alt="gavl" class="large-images"></li>
-                        </ul>
+                
+                
+                
+                
+    <section id="gallery">
+                        <div class="galleries">
+                            <img src="img/gallery/g10.png" alt="Image 1">
+                            <img src="img/gallery/g11.png" alt="Image 2">
+                            <div class="row">
+                              <img src="img/gallery/g12.png" alt="Image 3">
+                              <img src="img/gallery/g13.png" alt="Image 4">
+                            </div>
+                          </div>
+                          
                     </section>
     <section id="reviews" class="tent-spacing">
                         
                             <div>
                                <h1>Reviews</h1>
                             <section id="n1">
-                                   <img src="img/reviews/jeg.png" alt="jeg">
-                                   <img src="img/reviews/keg.png" alt="keg">
-                                   <img src="img/reviews/leg.png" alt="leg">
-                        
                                 <section class="card">
                                    <div>
                                        <h1>5/5</h1>
@@ -145,15 +137,17 @@
                                        <p>93</p>
                                        <button><img src="img/reviews/thumbsup.svg" alt="thumbs"></button>
                                        <p>33</p>
+                        
+                                       <ul>
+                                        <li><img src="img/reviews/p10.png" alt="jeg"></li>
+                                        <li><img src="img/reviews/p11.png" alt="keg"></li>
+                                        <li><img src="img/reviews/p12.png" alt="leg"></li>
+                                       </ul>
                                        </div>
                                 </section>
                             </section>
                             
                             <section id="n2">
-                                <img src="img/reviews/jeg.png" alt="jeg">
-                                <img src="img/reviews/keg.png" alt="keg">
-                                <img src="img/reviews/leg.png" alt="leg">
-                              
                                 <section class="card">
                                     <div>
                                         <h1>5/5</h1>
@@ -164,16 +158,18 @@
                                          <button><img src="img/reviews/thumbsdown.svg" alt="thumbsdown"></button>
                                         <p>93</p>
                                          <button><img src="img/reviews/thumbsup.svg" alt="thumbs"></button>
-                                        <p>33</p>
+                                         <ul>
+                                        <li><img src="img/reviews/p10.png" alt="jeg"></li>
+                                        <li><img src="img/reviews/p11.png" alt="keg"></li>
+                                        <li><img src="img/reviews/p12.png" alt="leg"></li>
+                                       </ul>
                                        </div>
                                 </section>
                         
                             </section>
                             
                             <section id="n3">
-                                <img src="img/reviews/jeg.png" alt="jeg">
-                                <img src="img/reviews/keg.png" alt="keg">
-                                <img src="img/reviews/leg.png" alt="leg">
+                               
                                 <section class="card">
                                    <div>
                                     <h1>5/5</h1>
@@ -185,15 +181,17 @@
                                        <p>93</p>
                                        <button><img src="img/reviews/thumbsup.svg" alt="thumbs"></button>
                                        <p>33</p>
+                                       <ul>
+                                        <li><img src="img/reviews/p10.png" alt="jeg"></li>
+                                        <li><img src="img/reviews/p11.png" alt="keg"></li>
+                                        <li><img src="img/reviews/p12.png" alt="leg"></li>
+                                       </ul>
                         
                                      </div>
                                 </section>
                             </section>
                             
                             <section id="n4">
-                                <img src="img/reviews/jeg.png" alt="jeg">
-                                <img src="img/reviews/keg.png" alt="keg">
-                                <img src="img/reviews/leg.png" alt="leg">
                               <section class="card">
                                <div>
                                 <h1>5/5</h1>
@@ -205,14 +203,16 @@
                                 <p>93</p>
                                 <button><img src="img/reviews/thumbsup.svg" alt="thumbs"></button>
                                 <p>33</p>
+                                <ul>
+                                    <li><img src="img/reviews/p10.png" alt="jeg"></li>
+                                    <li><img src="img/reviews/p11.png" alt="keg"></li>
+                                    <li><img src="img/reviews/p12.png" alt="leg"></li>
+                                   </ul>
                                </div>
                               </section>
                             </section>
                             
                            <section id="n5">
-                            <img src="img/reviews/jeg.png" alt="jeg">
-                                <img src="img/reviews/keg.png" alt="keg">
-                                <img src="img/reviews/leg.png" alt="leg">
                         
                            <section class="card">
                                <div>
@@ -225,6 +225,11 @@
                                        <p>93</p>
                                        <button><img src="img/reviews/thumbsup.svg" alt="thumbs"></button>
                                        <p>33</p>
+                                       <ul>
+                                        <li><img src="img/reviews/p10.png" alt="jeg"></li>
+                                        <li><img src="img/reviews/p11.png" alt="keg"></li>
+                                        <li><img src="img/reviews/p12.png" alt="leg"></li>
+                                       </ul>
                                </div>
                            </section>
                            </section>
@@ -232,66 +237,67 @@
                             </div>
                         </section>
                         
+                        
     <section id="related">
-                                <div>
-                                    <h1>Find the right Appliance For You</h1>
-                                <h3>Compare other toasters and appliances</h3>
-                                <section id="b1">
-                                    <img src="img/related/meg.png" alt="meg">
+                              <div>
+                                  <h1>Find the right Appliance For You</h1>
+                              <h3>Compare other toasters and appliances</h3>
+                              <section id="b1">
+                                  <img src="img/related/meg.png" alt="meg">
                             
-                                 <section class="cards">
-                                    <div>
-                                        <h1>Fruit Juicer </h1>
-                                        <h3>Sandwich racks facilitate the heating of the bread with desired filling.</h3>
-                                        <p>From $299</p>
-                                        <button> BUY NOW</button>
-                                        <a href="#">Learn More</a>
-                                        </div>
-                                 </section>
-                                 </section>
+                               <section class="cards">
+                                  <div>
+                                      <h1>Fruit Juicer </h1>
+                                      <h3>Sandwich racks facilitate the heating of the bread with desired filling.</h3>
+                                      <p>From $299</p>
+                                      <button> BUY NOW</button>
+                                      <a href="#">Learn More</a>
+                                      </div>
+                               </section>
+                               </section>
                             
-                                 <section id="b2">
-                                    <img src="img/related/neg.png" alt="neg">
+                               <section id="b2">
+                                  <img src="img/related/neg.png" alt="neg">
                             
-                                      <section class="cards">
-                                          <div>
-                                            <h1>Knife Stand</h1>
-                                            <h3>Knife blocks or sheaths protect knives from damage. Knife blocks have various slots that are intended for different kitchen knives.</h3>
-                                            <p>From $99</p>
-                                            <button> BUY NOW</button>
-                                            <a href="#">Learn More</a>
-                                         </div>
-                                       </section>
-                                 </section>
+                                    <section class="cards">
+                                        <div>
+                                          <h1>Knife Stand</h1>
+                                          <h3>Knife blocks or sheaths protect knives from damage. Knife blocks have various slots that are intended for different kitchen knives.</h3>
+                                          <p>From $99</p>
+                                          <button> BUY NOW</button>
+                                          <a href="#">Learn More</a>
+                                       </div>
+                                     </section>
+                               </section>
                             
-                                 <section id="b3">
-                                    <img src="img/related/oeg.png" alt="oeg">
+                               <section id="b3">
+                                  <img src="img/related/oeg.png" alt="oeg">
                             
-                                      <section class="cards">
-                                          <div>
-                                            <h1>Standing Mixer</h1>
-                                            <h3>The best stand mixer is a kitchen can help you mix a batch of cookies, knead bread dough and whip frosting</h3>
-                                            <p>From $599</p>
-                                            <button> BUY NOW</button>
-                                            <a href="#">Learn More</a>
-                                         </div>
-                                       </section>
-                                 </section>
+                                    <section class="cards">
+                                        <div>
+                                          <h1>Standing Mixer</h1>
+                                          <h3>The best stand mixer is a kitchen can help you mix a batch of cookies, knead bread dough and whip frosting</h3>
+                                          <p>From $599</p>
+                                          <button> BUY NOW</button>
+                                          <a href="#">Learn More</a>
+                                       </div>
+                                     </section>
+                               </section>
                             
-                                 <section id="b4">
-                                    <img src="img/related/peg.png" alt="peg">
+                               <section id="b4">
+                                  <img src="img/related/peg.png" alt="peg">
                             
-                                      <section class="cards">
-                                          <div>
-                                            <h1>Coffee Machine</h1>
-                                            <h3>You have more control over the grind, water temperature, and amount of flavor extracted.</h3>
-                                            <p>From $89</p>
-                                            <button> BUY NOW</button>
-                                            <a href="#">Learn More</a>
-                                         </div>
-                                       </section>
-                                 </section>
-                                </div>
+                                    <section class="cards">
+                                        <div>
+                                          <h1>Coffee Machine</h1>
+                                          <h3>You have more control over the grind, water temperature, and amount of flavor extracted.</h3>
+                                          <p>From $89</p>
+                                          <button> BUY NOW</button>
+                                          <a href="#">Learn More</a>
+                                       </div>
+                                     </section>
+                               </section>
+                              </div>
                             </section>
     <section>
                                     <img src="img/hero-2/hend.png" alt="lasthero">
@@ -300,195 +306,58 @@
                                 <section>
                                     <button>BUY NOW</button>
                                 </section>
-     <footer id="footer">
-                                         <div>
-                                            <nav id="f1">
-                                                 <ul>
-                                                     <li>
-                                                         <h1>About Us</h1>
-                                                         <section>
-                                                             <h3>About Smeg</h3>
-                                                         </section>
-                                                     </li>
+    <footer id="footer">
                                      
-                                     
-                                                     <li>
-                                                         <section>
-                                                             <h3>Careers</h3>
-                                                         </section>
-                                                     </li>
-                                     
-                                     
-                                                     <li>
-                                                         <section>
-                                                             <h3>News & Blog</h3>
-                                                         </section>
-                                                     </li>
-                                     
-                                                     <li>
-                                                         <section>
-                                                             <h3>Coronavirus Response</h3>
-                                                         </section>
-                                                     </li>
-                                     
-                                                     <li>
-                                                         <section>
-                                                             <h3> Sustainability & ESG </h3>
-                                                         </section>
-                                                     </li>
-                                     
-                                                     <li>
-                                                         <section>
-                                                             <h3>Press Center</h3>
-                                                         </section>
-                                                     </li>
-                                     
-                                                     <li>
-                                                         <section>
-                                                             <h3> Advertise with Us</h3>
-                                                         </section>
-                                                     </li>
-                                                 </ul>
+                                        <div class="footer-section">
+                                            <h4>About Us</h4>
+                                            <ul>
+                                              <li>About SMEG</li>
+                                              <li>Careers</li>
+                                              <li>News Blog</li>
+                                              <li>Coronavirus Response</li>
+                                            </ul>
+                                          </div>
+                                          <div class="footer-section">
+                                            <h4>Sustainability &amp; ESG</h4>
+                                            <ul>
+                                              <li>Press Center</li>
+                                              <li>Smeg Help</li>
+                                              <li>Returns</li>
+                                              <li>Track Orders</li>
+                                            </ul>
+                                          </div>
+                                          <div class="footer-section">
+                                            <h4>Contact Us</h4>
+                                            <ul>
+                                              <li>Recalls</li>
+                                              <li>Contact Us</li>
+                                              <li>Team Member</li>
+                                              <li>Stores</li>
+                                            </ul>
+                                          </div>
+                                          <div class="footer-section">
+                                            <h4>Find a Store</h4>
+                                            <ul>
+                                              <li>Smeg App</li>
+                                              <li>Registry</li>
+                                              <li>Aesthetic Lines</li>
+                                              <li>Large Appliances</li>
+                                              <li>Special Products</li>
+                                            </ul>
+                                          </div>
+                                          
+                                          <section id="f5">
+                                            <nav class="center-align">
+                                              <a href="https://www.smeg.com/special-products/divina-cucina"><img src="img/logos/smeglogo.svg" alt=""></a>
+                                              <h2>smeg</h2>
+                                              <img src="img/logos/facebook.svg" alt="faceb">
+                                              <img src="img/logos/instagram.svg" alt="insta">
+                                              <img src="img/logos/tiktok.svg" alt="tik">
                                             </nav>
-                                     
-                                            <section id="f2" class="tent-spacing">
-                                             <nav>
-                                             <ul>
-                                                 <li>
-                                                     <h1>Help</h1>
-                                                     <section>
-                                                         <h3>Smeg Help</h3>
-                                                     </section>
-                                                 </li>
-                                     
-                                     
-                                                 <li>
-                                                     <section>
-                                                         <h3>Returns</h3>
-                                                     </section>
-                                                 </li>
-                                     
-                                     
-                                                 <li>
-                                                     <section>
-                                                         <h3>Track Orders</h3>
-                                                     </section>
-                                                 </li>
-                                     
-                                                 <li>
-                                                     <section>
-                                                         <h3>Recalls</h3>
-                                                     </section>
-                                                 </li>
-                                     
-                                                 <li>
-                                                     <section>
-                                                         <h3> Contact Us</h3>
-                                                     </section>
-                                                 </li>
-                                     
-                                                 <li>
-                                                     <section>
-                                                         <h3>Feedback</h3>
-                                                     </section>
-                                                 </li>
-                                     
-                                             </ul>
-                                        </nav>
-                                            </section>
-                                     
-                                             <section id="f3">
-                                                 <nav>
-                                                     <ul>
-                                                         <li>
-                                                             <h1>Store</h1>
-                                                             <section>
-                                                                 <h3>Team Member </h3>
-                                                             </section>
-                                                         </li>
-                                         
-                                         
-                                                         <li>
-                                                             <section>
-                                                                 <h3>Stores</h3>
-                                                             </section>
-                                                         </li>
-                                         
-                                         
-                                                         <li>
-                                                             <section>
-                                                                 <h3>Find a Store</h3>
-                                     
-                                                             </section>
-                                                         </li>
-                                         
-                                                         <li>
-                                                             <section>
-                                                                 <h3>Smeg App</h3>
-                                                             </section>
-                                                         </li>
-                                         
-                                                         <li>
-                                                             <section>
-                                                                 <h3> Registry</h3>
-                                                             </section>
-                                                         </li>
-                                         
-                                                         <li>
-                                                             <section>
-                                                                 <h3>Press Center</h3>
-                                                             </section>
-                                                         </li>
-                                         
-                                                     </ul>
-                                                </nav>
-                                             </section>
-                                     
-                                             <section id="f4">
-                                                 <nav>
-                                                     <ul>
-                                                         <li>
-                                                             <h1>Navigation</h1>
-                                                             <section>
-                                                                 <h3>Aesthetic Lines</h3>
-                                                             </section>
-                                                         </li>
-                                         
-                                         
-                                                         <li>
-                                                             <section>
-                                                                 <h3>Large  Appliances </h3>
-                                                             </section>
-                                                         </li>
-                                         
-                                         
-                                                         <li>
-                                                             <section>
-                                                                 <h3>Special Products</h3>
-                                     
-                                                             </section>
-                                                         </li>
-                                         
-                                                         <li>
-                                                             <section>
-                                                                 <h3>Small Appliances </h3>
-                                                             </section>
-                                                         </li>  
-                                                     </ul>
-                                                </nav>
-                                             </section>
-                                     
-                                             <section id="f5">
-                                                 <nav>
-                                                     <a href="https://www.smeg.com/special-products/divina-cucina"> <img src="img/logos/smeglogo.svg" alt=""></a>
-                                                 <h2>smeg</h2>
-                                                 <img src="img/logos/facebook.svg" alt="faceb">
-                                                 <img src="img/logos/instagram.svg" alt="insta">
-                                                 <img src="img/logos/tiktok.svg" alt="tik">
-                                                 </nav>
-                                             </section>
-                                         </div>
-                                     </footer>
+                                          </section>
+                                          
+                                    
+                                    </footer>
 
     <script src="js/scripts-min.js"></script>
     

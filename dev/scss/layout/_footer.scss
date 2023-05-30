@@ -3,84 +3,65 @@
 ============= */
 
 #footer{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". footer .";
-    background-color: #EBD381;
-    padding: 16px;
-   
+    
+       background-color: #EBD381;
+       padding: 20px;
+       display: flex;
+       flex-wrap: wrap;
 
-
-    @include xxl{
-        grid-template-columns: auto 1200px auto;
-    }
-
-    >div{
-        grid-area: footer ;
-
-        @include md{
-            display: grid;
-            grid-template-columns:repeat(4, 1fr);
-            grid-template-areas: 
-            " f1 f2 f3 f4";
+      .footer-section {
+        flex: 1 0 25%;
+        margin-bottom: 20px;
+      }
+      
+      h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      li {
+        margin-bottom: 5px;
+      }
+      
+      @media (max-width: 768px) {
+        .footer-section {
+          flex-basis: 50%;
         }
-
-        @include lg{
-            grid-template-columns: repeat(4, 1r) ;
-            grid-template-areas: 
-            " f1 f2 f3 f4";
+      }
+      
+      @media (max-width: 480px) {
+        .footer-section {
+          flex-basis: 100%;
         }
-        #f1{
-            @include md{
-                grid-area: f1;
-            }
-
-            section{
-                display: flex;
-            }
-        }
-        #f2{
-            @include md{
-                grid-area: f2;
-            }
-
-            section{
-                display: flex;
-            }
-        }
-        #f3{
-            @include md{
-                grid-area: f3;
-            }
-
-            section{
-                display: flex;
-            }
-        }
-
-        #f4{
-            @include md{
-                grid-area: f4;
-            }
-
-            section{
-                display: flex;
-            }
-        }
-
-        #f5{
-            @include md{
-                grid-area: f5;
-            }
-
-            section{
-                display: flex;
-                padding: 16px 24px;
-                margin: 16px 16px;
-                margin-top: 16px;              
-            }
-        }
-               
-    }
+      }
+      
+      
+      #f5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .center-align {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      
+      .center-align img {
+        margin: 0 10px;
+       
+      }
+          
+    
 
 }
+
+        
