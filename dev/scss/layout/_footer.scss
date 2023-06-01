@@ -2,8 +2,8 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
-    background-color: #fb6f05;
-    color: white;
+    background-color: #EBD381;
+    color: rgb(7, 7, 7);
     padding: 24px 0;
 
     @include xxl{
@@ -18,14 +18,14 @@
             grid-template-columns: 50% auto;
             grid-template-areas: 
             "f1 f2"
-            "f1 f3";
+            "f3 f4";
             gap: 16px;
         }
 
         @include lg{
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             grid-template-areas: 
-            "f1 f2 f3";
+            "f1 f2 f3 f4";
         }
 
         #f1{
@@ -60,8 +60,8 @@
                 grid-area: f2;
             }
 
-            h1{
-                color: white;
+            h3{
+                color: rgb(10, 10, 10);
                 font-size: rem-calc(20);
                 font-weight: 600;
                 margin-top: 32px;
@@ -70,27 +70,6 @@
                 @include md{
                     margin-top: 0;
                 }
-            }
-
-            form{
-                input{
-                    background-color: var(--gray);
-                    width: 100%;
-                    border-radius: 0;
-                    border: none;
-                    box-sizing: border-box;
-                    padding: 16px 8px;
-                }
-
-                div{
-                    text-align: right;
-                    button{
-                        margin-top: 16px;
-                        border: none;
-                    }
-                }
-
-               
             }
         } 
 
@@ -104,8 +83,8 @@
                 text-align: right;
             }
 
-            h1{
-                color: white;
+            h3{
+                color: rgb(11, 10, 10);
                 font-size: rem-calc(20);
                 font-weight: 600;
                 margin-top: 32px;
@@ -130,7 +109,7 @@
                     }
 
                     a:link, a:visited{
-                        color: white;
+                        color: rgb(216, 211, 141);
                         font-size: rem-calc(30);
                         transition: 0.25s;
 

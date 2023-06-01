@@ -19,22 +19,31 @@
             display: grid;
             gap: 16px;
             
+            section{
+                text-align: center;
+            }
     
             @include md {
-                    grid-area: articles;
-                    grid-template-columns: repeat(4, 1fr);
-                    grid-template-areas:
-                        " b1 b1 b2 b2"
-                        "b3 b3 b4 b4"
-                        "..b5 b5 ..";
+                    grid-area: related;
+                    display: grid;
+                   grid-template-columns: 50% auto ;
+                   grid-template-areas: 
+                    "b1 b2"
+                    "b3 b4";
                 }
     
                         @include lg {
-                            grid-area: articles;
+                            grid-area: related;
                             grid-template-columns: repeat(4, 1fr);
                             grid-template-areas:
-                                "nt nt nt nt nt nt nt nt"
-                                " b1 b1 b2 b2 b3 b3 b4 b4";
+                                "b1 b2 b3 b4";
+                        }
+
+                        @include xxl {
+                            grid-area: related;
+                            grid-template-columns: repeat(4, 1fr);
+                            grid-template-areas:
+                                "b1 b2 b3 b4";
                         }
     
                     b1{
@@ -43,13 +52,8 @@
                         }
                     }
                     
-            section {
     
-                img {
-                    width: 100%;
-                }
-            }
-    
+            
             .cards {
                 display: grid;
                 grid-template-columns: 16px auto 16px;
@@ -61,7 +65,7 @@
                 }
 
                 button{
-                    border: 1px solid black;
+                    border: 1px solid rgb(252, 249, 249);
                     background-color: #315984;
                     border-radius: 5px;
                     padding: 10px 16px;
@@ -76,26 +80,26 @@
     
         #b1 {
             @include md {
-        grid-area: n1;
+        grid-area: b1;
             }
         }
     
     
         #b2 {
             @include md {
-                grid-area: n2;
+                grid-area: b2;
             }
         }
     
         #b3 {
             @include md {
-                grid-area: n3;
+                grid-area: b3;
             }
         }
     
         #b4 {
             @include md {
-                grid-area: n4;
+                grid-area: b4;
             }
         }
     

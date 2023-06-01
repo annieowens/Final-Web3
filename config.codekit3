@@ -213,6 +213,17 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/gallery\/g14.webp" : {
+      "ft" : 8388608,
+      "iS" : 84632,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gallery\/g14.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
     "\/deploy\/img\/gallery\/gall.jpg" : {
       "ft" : 16384,
       "iS" : 61029,
@@ -450,11 +461,37 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/related\/mmeg.png" : {
+      "ft" : 32768,
+      "iS" : 8841,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/related\/mmeg.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/related\/neg.png" : {
       "ft" : 32768,
       "iS" : 75127,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/related\/neg.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/related\/nneg.png" : {
+      "ft" : 32768,
+      "iS" : 15114,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/related\/nneg.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -476,11 +513,37 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/related\/ooeg.png" : {
+      "ft" : 32768,
+      "iS" : 38675,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/related\/ooeg.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/related\/peg.png" : {
       "ft" : 32768,
       "iS" : 105915,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/related\/peg.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/related\/ppeg.png" : {
+      "ft" : 32768,
+      "iS" : 38798,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/related\/ppeg.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1030,7 +1093,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/deploy\/css\/styles.css",
       "oF" : 3,
       "oS" : 0,

@@ -5,29 +5,41 @@
 #hero-2{
     background-image: url("../img/hero-2/hend.png");
     background-size: cover;
-    background-position: 70% bottom;
-    height: 65vh;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-end;
+    // align-items: ;
 
     @include md{
+        height: 60vh;
+        background-position: left bottom;
+    }
+
+    @include xl{
         height: 70vh;
-        background-position: 90% bottom;
     }
 
     @include lg{
-        height: 80vh;
-        background-position: center;
+        height: 70vh;
     }
 
     @include xxl{
         height: 100vh;
-    }
-
-    button{
-        border: none;
-        background-color: #315984;
-        font-weight: 700;
-        border-radius: 3px;
-        color: black;
-        padding: 10px 15px;
-    }
+        background-position: center bottom;
+    } 
+   
+        button{
+            border: none;
+            background-color: #315984;
+            background-position: center;
+            margin-top: 10vh;
+            margin-right: 10vw;
+            //  position: absolute;
+            // top: 50%;
+            // right: 10px;
+        
+    
 }
+
+}
+  

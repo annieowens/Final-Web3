@@ -20,21 +20,23 @@
             
     
             @include md {
-                    grid-area: reviews;
-                    grid-template-columns: repeat(4, 1fr);
-                    grid-template-areas:
-                        " n1 n1 n2 n2"
-                        "n3 n3 n4 n4"
-                        "..n5 n5 ..";
-                }
-    
-                        @include lg {
-                            grid-area: reviews;
-                            grid-template-columns: repeat(6, 1fr);
-                            grid-template-areas:
-                                " n1 n1 n2 n2 n3 n3 "
-                                ".. n4 n4 n5 n5 ..";
-                        }
+                grid-area: reviews;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas:
+                    "nt nt nt nt"
+                    "n1 n1 n2 n2"
+                    "n3 n3 n4 n4"
+                    ".. n5 n5 ..";
+            }
+
+                    @include lg {
+                        grid-template-columns: repeat(6, 1fr);
+                        grid-template-areas: 
+                        "nt nt nt nt nt nt"
+                        "n1 n1 n2 n2 n3 n3"
+                        "n4 n4 n5 n5 n6 n6";
+                         
+                    }
     
                     h1{
                         @include md{
@@ -53,8 +55,9 @@
                 display: grid;
                 grid-template-columns: 16px auto 16px;
                 grid-template-areas: ". card .";
-                background-color: rgb(159, 182, 174);
+                background-color: #AAB6C5;
                 border-color: #060606;
+                border-radius: 1px;
                 >div {
                     grid-area: card;
                 }
@@ -69,6 +72,13 @@
                     margin-bottom: 12px;
 
                 }
+
+                ul{
+                    li{
+                        padding: 10px 16px;
+                    }
+                }
+                  
             }
     
         }
@@ -103,7 +113,14 @@
                 grid-area: n5;
             }
         }
+
+         #n6 {
+                @include md {
+                    grid-area: n6;
+                }
+        }
         h1{
             margin-bottom: 16px;
         }
      }
+    
