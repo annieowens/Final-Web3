@@ -635,7 +635,7 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/deploy\/colors.html",
+      "oAP" : "\/deploy\/index.html",
       "oF" : 3
     },
     "\/dev\/content\/features.kit" : {
@@ -643,16 +643,16 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/features.html",
-      "oF" : 1
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 3
     },
     "\/dev\/content\/gallery.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/gallery.html",
-      "oF" : 1
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 3
     },
     "\/dev\/content\/hero-2.kit" : {
       "cB" : 0,
