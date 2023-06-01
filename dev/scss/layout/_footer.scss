@@ -1,67 +1,165 @@
-/* =============
-    Footer
-============= */
-
 #footer{
-    
-       background-color: #EBD381;
-       padding: 20px;
-       display: flex;
-       flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". footer .";
+    background-color: #EBD381;
+    color: white;
+    padding: 24px 0;
 
-      .footer-section {
-        flex: 1 0 25%;
-        margin-bottom: 20px;
-      }
-      
-      h4 {
-        font-size: 16px;
-        margin-bottom: 10px;
-      }
-      
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-      
-      li {
-        margin-bottom: 5px;
-      }
-      
-      @media (max-width: 768px) {
-        .footer-section {
-          flex-basis: 50%;
-        }
-      }
-      
-      @media (max-width: 480px) {
-        .footer-section {
-          flex-basis: 100%;
-        }
-      }
-      
-      
-      #f5 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      .center-align {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-      }
-      
-      .center-align img {
-        margin: 0 10px;
-       
-      }
-          
-    
+    @include xxl{
+        grid-template-columns: auto 1200px auto;
+    }
 
+    >div{
+        grid-area: footer;
+
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: 
+            "f1 f2"
+            "f1 f3";
+            gap: 16px;
+        }
+
+        @include lg{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: 
+            "f1 f2 f3";
+        }
+
+        #f1{
+            @include md{
+                grid-area: f1;
+            }
+
+            h3{
+                color: white;
+                font-size: rem-calc(20);
+                font-weight: 600;
+                margin-bottom: 16px;
+            }
+
+            p{
+                font-size: rem-calc(16);
+                font-weight: 600;
+                margin-bottom: 8px;
+            }
+
+            .divide-line{
+                height: 1px;
+                background-color: white;
+                width: 100%;
+                margin: 16px 0;
+            }
+
+            section{
+                display: flex;
+
+                i{
+                    color: var(--red);
+                    font-size: rem-calc(20);
+                    margin-right: 16px;
+                }
+
+            }
+
+            a:link, a:visited{
+                color: var(--blueInput);
+                &:hover, &:active{
+                    color: var(--white);
+                }
+            }
+        }   
+
+        #f2{
+            @include md{
+                grid-area: f2;
+            }
+
+            h1{
+                color: white;
+                font-size: rem-calc(20);
+                font-weight: 600;
+                margin-top: 32px;
+                margin-bottom: 16px;
+
+                @include md{
+                    margin-top: 0;
+                }
+            }
+
+            form{
+                input{
+                    background-color: var(--gray);
+                    width: 100%;
+                    border-radius: 0;
+                    border: none;
+                    box-sizing: border-box;
+                    padding: 16px 8px;
+                }
+
+                div{
+                    text-align: right;
+                    button{
+                        margin-top: 16px;
+                        border: none;
+                    }
+                }
+
+               
+            }
+        } 
+
+        #f3{
+            
+            @include md{
+                grid-area: f3;
+            }
+
+            @include lg{
+                text-align: right;
+            }
+
+            h1{
+                color: white;
+                font-size: rem-calc(20);
+                font-weight: 600;
+                margin-top: 32px;
+                margin-bottom: 16px;
+
+                @include md{
+                    margin-top: 0;
+                }
+            }
+
+            ul{
+                display: flex;
+                @include lg{
+                    justify-content: flex-end;
+
+                }
+                li{
+                    margin-right: 16px;
+
+                    @include xl{
+                        margin: 0 0 0 16px;
+                    }
+
+                    a:link, a:visited{
+                        color: white;
+                        font-size: rem-calc(30);
+                        transition: 0.25s;
+
+                        &:hover, &:active{
+                            color: var(--blueInput);
+                        }
+                    }
+                }
+            }
+        } 
+    }
 }
 
-        
+
+

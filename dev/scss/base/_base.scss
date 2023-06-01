@@ -3,32 +3,28 @@
 ============= */
 
 body{
-    background-color: var(--white);
+    position: relative;
 }
-ul {
+
+ul{
     margin: 0;
     padding: 0;
     li{
-        padding: 0;
-        margin: 0;
         list-style: none;
     }
 }
-.content-spacing{
-    padding-top: 16px;
-    @include lg{
-        padding-top: 32px;
+
+.content-space-top{
+    margin-top: 16px;
+
+    @include md{
+        margin-top: 24px;
     }
- }
- .tent-spacing{
-    padding-bottom: 16px;
+
     @include lg{
-        padding-bottom: 32px;
+        margin-top: 30px;
     }
- }
- 
- 
- 
+}
 
 .show-large{
     display: none;
@@ -39,11 +35,11 @@ ul {
 
 .show-extra-large{
     display: none;
-    @include  lg{
+    @include xxl{
         display: block;
     }
 }
 
-.large-images{
-    width: 100vw;
+.test-imgs{
+    width: 100%;
 }
