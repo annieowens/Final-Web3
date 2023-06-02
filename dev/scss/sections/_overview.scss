@@ -1,10 +1,10 @@
 /* =============
-    Hero-2
+    overview
 ============= */
 
-#hero{
+#overview{
 
-    background-image: url("../img/hero/a.jpg"); opacity: 70%;
+    background-image: url("../img/overview/b.png");
     background-size: cover;
     height: 50vh;
     display: flex;
@@ -29,21 +29,12 @@
         background-position: center bottom;
     }   
 
-          h1{
+          h2{
             position: absolute;
             color: #2D5983;
             margin-top: 5vh;
             margin-left: 81vh;
             margin-right: 5vh;
 
-           }
-
-           h4{
-            position: absolute;
-            color: #183752;
-            margin-top: 12vh;
-            margin-right: 1vh;
-           }      
+           }    
 }
-
-  
