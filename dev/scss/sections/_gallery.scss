@@ -4,8 +4,53 @@
 
 #gallery{
     background-image: url("../img/gallery/g10.png");
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-end;
     background-image: url("../img/gallery/g11.png");
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-end;
     background-image:url("../img/gallery/g12.png") ;
-    background-image: url("../img/gallery/g13.png");  
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url("../img/gallery/g13.png"); 
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-end; 
     
+  
+    
+
+    @include md{
+        height: 60vh;
+        background-position: left bottom;
+    }
+
+    @include xl{
+        height: 70vh;
+    }
+
+    @include lg{
+        height: 70vh;
+    }
+
+    @include xxl{
+        height: 100vh;
+        background-position: center bottom;
+    }   
+
+          h2{
+            position: absolute;
+            color: #2D5983;
+            margin-top: 5vh;
+            margin-left: 81vh;
+            margin-right: 5vh;
+
+           }    
 }
