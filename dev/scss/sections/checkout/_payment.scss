@@ -5,8 +5,38 @@
     @include xxl{
       grid-template-columns: auto 1200px auto;
   }
-  
+
+  div{
+    grid-area: checkout;
+
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto ;
+            grid-template-areas: 
+            "f1 f2"
+            "f1 f3";
+        }
+
+        @include lg{
+            grid-template-columns: repeat(3, 1r) ;
+            grid-template-areas: 
+            "f1 f2 f3";
+        }
+
   #x1{
+
+    .faster{
+      h2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      button{
+        color: aliceblue;
+        background-color: #76A4D0;
+        border-radius: 20px;
+        border-color: aliceblue;
+      }
+    }
     .checkout-grid {
       display: flex;
       flex-wrap: wrap;
@@ -125,6 +155,7 @@
     .checkout-section {
       flex-basis: 25%;
     }
+  }
   }
   
 }

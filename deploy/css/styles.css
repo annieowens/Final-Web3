@@ -1147,38 +1147,64 @@ a {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". checkout .";
-  /* Media Queries */
 }
 @media (min-width: 1440px) {
   #checkout {
     grid-template-columns: auto 1200px auto;
   }
 }
-#checkout #x1 .checkout-grid {
+#checkout div {
+  grid-area: checkout;
+  /* Media Queries */
+}
+@media (min-width: 768px) {
+  #checkout div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "f1 f2" "f1 f3";
+  }
+}
+@media (min-width: 1024px) {
+  #checkout div {
+    grid-template-columns: repeat(3, 1r);
+    grid-template-areas: "f1 f2 f3";
+  }
+}
+#checkout div #x1 .faster h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#checkout div #x1 .faster button {
+  color: aliceblue;
+  background-color: #76A4D0;
+  border-radius: 20px;
+  border-color: aliceblue;
+}
+#checkout div #x1 .checkout-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
-#checkout #x1 .checkout-section {
+#checkout div #x1 .checkout-section {
   flex: 1;
   min-width: 300px;
 }
-#checkout #x1 .orange-box {
+#checkout div #x1 .orange-box {
   background-color: orange;
   padding: 10px;
   margin-bottom: 10px;
 }
-#checkout #x1 .payment-options button {
+#checkout div #x1 .payment-options button {
   margin-right: 5px;
 }
-#checkout #x1 .payment-options p {
+#checkout div #x1 .payment-options p {
   margin-top: 5px;
 }
-#checkout #x1 h3 {
+#checkout div #x1 h3 {
   margin-top: 0;
 }
-#checkout #x1 #newsletter {
+#checkout div #x1 #newsletter {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1189,72 +1215,72 @@ a {
   vertical-align: middle;
   margin-left: 5px;
 }
-#checkout #x1 #newsletter:checked {
+#checkout div #x1 #newsletter:checked {
   background-color: orange;
 }
-#checkout .form-group {
+#checkout div .form-group {
   margin-bottom: 10px;
 }
-#checkout .form-group label {
+#checkout div .form-group label {
   display: block;
   margin-bottom: 5px;
 }
-#checkout .dropdown {
+#checkout div .dropdown {
   position: relative;
 }
-#checkout .dropdown select {
+#checkout div .dropdown select {
   width: 100%;
   padding: 5px;
 }
-#checkout .item {
+#checkout div .item {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
-#checkout .item img {
+#checkout div .item img {
   width: 50px;
   height: 50px;
   margin-right: 10px;
 }
-#checkout .delete-button {
+#checkout div .delete-button {
   background-color: red;
   color: white;
   border: none;
   padding: 5px 10px;
   cursor: pointer;
 }
-#checkout .button-container {
+#checkout div .button-container {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
-#checkout .pay-button,
-#checkout .cancel-button {
+#checkout div .pay-button,
+#checkout div .cancel-button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
 }
 @media (min-width: 768px) {
-  #checkout {
+  #checkout div {
     /* Medium screens */
   }
-  #checkout .checkout-grid {
+  #checkout div .checkout-grid {
     justify-content: space-between;
   }
 }
 @media (min-width: 992px) {
-  #checkout {
+  #checkout div {
     /* Large screens */
   }
-  #checkout .checkout-section {
+  #checkout div .checkout-section {
     flex-basis: 33.33%;
   }
 }
 @media (min-width: 1200px) {
-  #checkout {
+  #checkout div {
     /* Extra large screens */
   }
-  #checkout .checkout-section {
+  #checkout div .checkout-section {
     flex-basis: 25%;
   }
 }
