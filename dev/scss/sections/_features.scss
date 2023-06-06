@@ -5,7 +5,8 @@
 #features{
 
    #c1{
-    background-image: url("img/features/c.png");
+    background-image: url("../img/features/c.png");
+    background-size: cover;
     height: 50vh;
     display: flex;
     justify-content: flex-end;
@@ -30,7 +31,8 @@
    }
     
       #c2{
-        background-image: url("img/features/f.jpg");
+        background-image: url("../img/features/f.jpg");
+        
         height: 50vh;
         display: flex;
         justify-content: flex-end;

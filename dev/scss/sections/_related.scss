@@ -2,8 +2,8 @@
     Related
 ============= */
 
-#related{
-    
+#related {
+
     @include md {
         display: grid;
         grid-template-columns: 16px auto 16px;
@@ -15,114 +15,102 @@
 
     }
 
-        >div {
-            display: grid;
-            gap: 16px;
+    >div {
+        display: grid;
+        gap: 16px;
+        margin-top: 20px;
+
+        @include md {
+            grid-area: related;
+            grid-template-columns: 50% auto;
+            grid-template-areas:
+                "nt nt"
+                "b1 b2"
+                "b3 b4";
+
+        }
+
+        @include lg {
+          
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas:
+            "nt nt nt nt"
+                "b1 b2 b3 b4";
+        }
+
+        section {
+            text-align: center;
             margin-top: 20px;
-            
-            section{
-                text-align: center;
-                margin-top: 20px;
-                
-            }
 
-           
-            @include md {
-                    grid-area: related;
-                    display: grid;
-                   grid-template-columns: 50% auto ;
-                   grid-template-areas: 
-                    "b1 b2"
-                    "b3 b4";
-
-                }
-    
-                        @include lg {
-                            grid-area: related;
-                            grid-template-columns: repeat(4, 1fr);
-                            grid-template-areas:
-                                "b1 b2 b3 b4";
-                        }
-
-                        @include xl {
-                            grid-area: related;
-                            grid-template-columns: repeat(4, 1fr);
-                            grid-template-areas:
-                                "b1 b2 b3 b4";
-                        }
-
-                        @include xxl {
-                            grid-area: related;
-                            grid-template-columns: repeat(4, 1fr);
-                            grid-template-areas:
-                                "b1 b2 b3 b4";
-                        }
-
-                        @include md{
-                            grid-area: nt;
-                        }
-    
-                    
-                    
-    
-            
-            .cards {
-                display: grid;
-                grid-template-columns: 16px auto 16px;
-                grid-template-areas: ". cards .";
-                border-color: #AAB6C5;
-                >div {
-                    grid-area: cards;
-                    margin-top: 16px;
-                }
-
-                button{
-                    border: 1px solid rgb(252, 249, 249);
-                    background-color: #315984;
-                    color: rgb(249, 249, 249);
-                    border-radius: 20px;
-                    padding: 6px 10px;
-                    margin-top: 12px;
-                    margin-left: 0;
-                    margin-bottom: 12px;
-
-                }
-            }
-    
         }
-    
-        #b1 {
-            @include md {
-        grid-area: b1;
+
+
+        .cards {
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". cards .";
+            border-color: #AAB6C5;
+
+            >div {
+                grid-area: cards;
+                margin-top: 16px;
             }
-        }
-    
-    
-        #b2 {
-            @include md {
-                grid-area: b2;
-            }
-        }
-    
-        #b3 {
-            @include md {
-                grid-area: b3;
-            }
-        }
-    
-        #b4 {
-            @include md {
-                grid-area: b4;
+
+            button {
+                border: 1px solid rgb(252, 249, 249);
+                background-color: #315984;
+                color: rgb(249, 249, 249);
+                border-radius: 20px;
+                padding: 6px 10px;
+                margin-top: 12px;
+                margin-left: 0;
+                margin-bottom: 12px;
+                display: block;
+                margin: 0 auto;
+
             }
         }
 
-        h4{
-            margin-top: 16px;
-            margin-bottom: 16px;
+    }
+
+    #nt {
+        @include md {
+            grid-area: nt;
         }
-    
-        h3{
-            margin-top: 16px;
-            margin-bottom: 16px;
+    }
+
+    #b1 {
+        @include md {
+            grid-area: b1;
         }
-     }
+    }
+
+
+    #b2 {
+        @include md {
+            grid-area: b2;
+        }
+    }
+
+    #b3 {
+        @include md {
+            grid-area: b3;
+        }
+    }
+
+    #b4 {
+        @include md {
+            grid-area: b4;
+        }
+    }
+
+    h4 {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    h3 {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+}

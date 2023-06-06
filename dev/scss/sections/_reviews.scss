@@ -50,6 +50,15 @@
                     width: 100%;
                 }
             }
+
+            .review-top{
+                display: flex;
+
+                h1{
+                    background-color: red;
+                    padding: 10px;
+                }
+            }
     
             .card {
                 display: grid;

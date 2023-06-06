@@ -705,7 +705,8 @@ a {
     features
 ============= */
 #features #c1 {
-  background-image: url("img/features/c.png");
+  background-image: url("../img/features/c.png");
+  background-size: cover;
   height: 50vh;
   display: flex;
   justify-content: flex-end;
@@ -725,7 +726,7 @@ a {
   margin-right: 5vh;
 }
 #features #c2 {
-  background-image: url("img/features/f.jpg");
+  background-image: url("../img/features/f.jpg");
   height: 50vh;
   display: flex;
   justify-content: flex-end;
@@ -819,56 +820,27 @@ a {
 /* =============
     Gallery
 ============= */
-#gallery {
+#gallery ul {
+  display: grid;
+  grid-template-columns: 50% auto;
+  gap: 16px;
+}
+#gallery ul li {
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+#gallery ul #g1 {
   background-image: url("../img/gallery/g10.png");
-  background-size: cover;
-  height: 50vh;
-  display: flex;
-  justify-content: flex-end;
+}
+#gallery ul #g2 {
   background-image: url("../img/gallery/g11.png");
-  background-size: cover;
-  height: 50vh;
-  display: flex;
-  justify-content: flex-end;
+}
+#gallery ul #g3 {
   background-image: url("../img/gallery/g12.png");
-  background-size: cover;
-  height: 50vh;
-  display: flex;
-  justify-content: flex-end;
+}
+#gallery ul #g4 {
   background-image: url("../img/gallery/g13.png");
-  background-size: cover;
-  height: 50vh;
-  display: flex;
-  justify-content: flex-end;
-}
-@media (min-width: 768px) {
-  #gallery {
-    height: 60vh;
-    background-position: left bottom;
-  }
-}
-@media (min-width: 1200px) {
-  #gallery {
-    height: 70vh;
-  }
-}
-@media (min-width: 1024px) {
-  #gallery {
-    height: 70vh;
-  }
-}
-@media (min-width: 1440px) {
-  #gallery {
-    height: 100vh;
-    background-position: center bottom;
-  }
-}
-#gallery h2 {
-  position: absolute;
-  color: #2D5983;
-  margin-top: 5vh;
-  margin-left: 81vh;
-  margin-right: 5vh;
 }
 
 /* =============
@@ -910,6 +882,13 @@ a {
 }
 #reviews > div section img {
   width: 100%;
+}
+#reviews > div .review-top {
+  display: flex;
+}
+#reviews > div .review-top h1 {
+  background-color: red;
+  padding: 10px;
 }
 #reviews > div .card {
   display: grid;
@@ -1007,43 +986,22 @@ a {
   gap: 16px;
   margin-top: 20px;
 }
-#related > div section {
-  text-align: center;
-  margin-top: 20px;
-}
 @media (min-width: 768px) {
   #related > div {
     grid-area: related;
-    display: grid;
     grid-template-columns: 50% auto;
-    grid-template-areas: "b1 b2" "b3 b4";
+    grid-template-areas: "nt nt" "b1 b2" "b3 b4";
   }
 }
 @media (min-width: 1024px) {
   #related > div {
-    grid-area: related;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "b1 b2 b3 b4";
+    grid-template-areas: "nt nt nt nt" "b1 b2 b3 b4";
   }
 }
-@media (min-width: 1200px) {
-  #related > div {
-    grid-area: related;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "b1 b2 b3 b4";
-  }
-}
-@media (min-width: 1440px) {
-  #related > div {
-    grid-area: related;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "b1 b2 b3 b4";
-  }
-}
-@media (min-width: 768px) {
-  #related > div {
-    grid-area: nt;
-  }
+#related > div section {
+  text-align: center;
+  margin-top: 20px;
 }
 #related > div .cards {
   display: grid;
@@ -1064,6 +1022,13 @@ a {
   margin-top: 12px;
   margin-left: 0;
   margin-bottom: 12px;
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  #related #nt {
+    grid-area: nt;
+  }
 }
 @media (min-width: 768px) {
   #related #b1 {
@@ -1145,7 +1110,7 @@ a {
 
 #checkout {
   display: grid;
-  grid-template-columns: 16px auto 16px;
+  grid-template-columns: 10px auto 10px;
   grid-template-areas: ". checkout .";
 }
 @media (min-width: 1440px) {
@@ -1155,7 +1120,6 @@ a {
 }
 #checkout div {
   grid-area: checkout;
-  /* Media Queries */
 }
 @media (min-width: 768px) {
   #checkout div {
@@ -1166,45 +1130,40 @@ a {
 }
 @media (min-width: 1024px) {
   #checkout div {
-    grid-template-columns: repeat(3, 1r);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "f1 f2 f3";
   }
 }
 #checkout div #x1 .faster h2 {
-  margin-top: 10px;
+  margin-top: 36px;
   margin-bottom: 10px;
 }
 #checkout div #x1 .faster button {
+  margin-left: 10px;
   color: aliceblue;
   background-color: #76A4D0;
-  border-radius: 20px;
-  border-color: aliceblue;
+  width: 93px;
+  height: 28;
 }
-#checkout div #x1 .checkout-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+#checkout div #x1 .faster p {
+  margin-top: 16px;
+  color: #868686;
+  font-size: small;
+  font-style: italic;
 }
-#checkout div #x1 .checkout-section {
-  flex: 1;
-  min-width: 300px;
-}
-#checkout div #x1 .orange-box {
-  background-color: orange;
-  padding: 10px;
+#checkout div #x1 .contact h2 {
+  margin-top: 16px;
   margin-bottom: 10px;
 }
-#checkout div #x1 .payment-options button {
-  margin-right: 5px;
+#checkout div #x1 .contact form input {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
 }
-#checkout div #x1 .payment-options p {
-  margin-top: 5px;
-}
-#checkout div #x1 h3 {
-  margin-top: 0;
-}
-#checkout div #x1 #newsletter {
+#checkout div #x1 .contact form #newsletter {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1215,72 +1174,71 @@ a {
   vertical-align: middle;
   margin-left: 5px;
 }
-#checkout div #x1 #newsletter:checked {
+#checkout div #x1 .contact form #newsletter:checked {
   background-color: orange;
 }
-#checkout div .form-group {
+#checkout div #x1 .contact form p {
+  margin-top: 16px;
+  color: #868686;
+  font-size: small;
+  font-style: italic;
+}
+#checkout div #x1 .shipping h2 {
+  margin-top: 36px;
   margin-bottom: 10px;
 }
-#checkout div .form-group label {
-  display: block;
-  margin-bottom: 5px;
-}
-#checkout div .dropdown {
-  position: relative;
-}
-#checkout div .dropdown select {
-  width: 100%;
-  padding: 5px;
-}
-#checkout div .item {
-  display: flex;
-  align-items: center;
+#checkout div #x1 .shipping form {
+  margin-top: 36px;
   margin-bottom: 10px;
 }
-#checkout div .item img {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
+#checkout div #x1 .shipping form input {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
 }
-#checkout div .delete-button {
-  background-color: red;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
+#checkout div #x1 .shipping form .dropdown {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
 }
-#checkout div .button-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+#checkout div #x2 h2 {
+  margin-top: 150px;
+  margin-bottom: 10px;
 }
-#checkout div .pay-button,
-#checkout div .cancel-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
+#checkout div #x2 form {
+  margin-top: 36px;
+  margin-bottom: 10px;
 }
-@media (min-width: 768px) {
-  #checkout div {
-    /* Medium screens */
-  }
-  #checkout div .checkout-grid {
-    justify-content: space-between;
-  }
+#checkout div #x2 form input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
 }
-@media (min-width: 992px) {
-  #checkout div {
-    /* Large screens */
-  }
-  #checkout div .checkout-section {
-    flex-basis: 33.33%;
-  }
+#checkout div #x2 form .dropdown2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
 }
-@media (min-width: 1200px) {
-  #checkout div {
-    /* Extra large screens */
-  }
-  #checkout div .checkout-section {
-    flex-basis: 25%;
-  }
+#checkout div #x3 {
+  border: #060606;
+}
+#checkout div #x3 h2 {
+  margin-top: 150px;
+  margin-bottom: 10px;
+}
+#checkout div img {
+  width: 68px;
+  height: 66px;
 }

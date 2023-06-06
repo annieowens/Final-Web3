@@ -2,55 +2,39 @@
     Gallery
 ============= */
 
-#gallery{
-    background-image: url("../img/gallery/g10.png");
-    background-size: cover;
-    height: 50vh;
-    display: flex;
-    justify-content: flex-end;
-    background-image: url("../img/gallery/g11.png");
-    background-size: cover;
-    height: 50vh;
-    display: flex;
-    justify-content: flex-end;
-    background-image:url("../img/gallery/g12.png") ;
-    background-size: cover;
-    height: 50vh;
-    display: flex;
-    justify-content: flex-end;
-    background-image: url("../img/gallery/g13.png"); 
-    background-size: cover;
-    height: 50vh;
-    display: flex;
-    justify-content: flex-end; 
-    
-  
-    
+#gallery {
 
-    @include md{
-        height: 60vh;
-        background-position: left bottom;
+   
+
+   ul{
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 16px;
+
+    li {
+        background-size: cover;
+        height: 50vh;
+        width: 100%;
     }
 
-    @include xl{
-        height: 70vh;
+    #g1 {
+        background-image: url("../img/gallery/g10.png");
     }
 
-    @include lg{
-        height: 70vh;
+    #g2 {
+        background-image: url("../img/gallery/g11.png");
     }
 
-    @include xxl{
-        height: 100vh;
-        background-position: center bottom;
-    }   
+    #g3 {
+        background-image: url("../img/gallery/g12.png");
+    }
 
-          h2{
-            position: absolute;
-            color: #2D5983;
-            margin-top: 5vh;
-            margin-left: 81vh;
-            margin-right: 5vh;
+    #g4 {
+        background-image: url("../img/gallery/g13.png");
+    }
+   }
 
-           }    
+
+   
+
 }

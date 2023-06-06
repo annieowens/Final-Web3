@@ -1,6 +1,6 @@
 #checkout{
   display: grid;
-    grid-template-columns: 16px auto 16px;
+    grid-template-columns: 10px auto 10px;
     grid-template-areas: ". checkout .";
     @include xxl{
       grid-template-columns: auto 1200px auto;
@@ -18,144 +18,146 @@
         }
 
         @include lg{
-            grid-template-columns: repeat(3, 1r) ;
+            grid-template-columns: repeat(3, 1fr) ;
             grid-template-areas: 
             "f1 f2 f3";
         }
 
-  #x1{
+   #x1{
 
     .faster{
       h2{
-        margin-top: 10px;
+        margin-top: 36px;
         margin-bottom: 10px;
       }
       button{
+        margin-left: 10px;
         color: aliceblue;
         background-color: #76A4D0;
-        border-radius: 20px;
-        border-color: aliceblue;
+        width: 93px ;
+        height: 28;
+      }
+      p{
+        margin-top: 16px;
+        color: #868686;
+        font-size: small;
+        font-style: italic;
       }
     }
-    .checkout-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
+
+    .contact{
+      h2{
+        margin-top: 16px;
+        margin-bottom: 10px;
+      }
+      form{
+
+        input{
+          margin-top: 10px;
+          margin-bottom: 16px;
+          margin-left: 10px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          text-align: left;
+        }
+       
+        #newsletter {
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          width: 16px;
+          height: 16px;
+          border: 2px solid orange;
+          border-radius: 4px;
+          vertical-align: middle;
+          margin-left: 5px;
+        }
+        
+        #newsletter:checked {
+          background-color: orange;
+        }
+        
+        p{
+          margin-top: 16px;
+          color: #868686;
+          font-size: small;
+          font-style: italic;
+        }
+      }
     }
-    
-    .checkout-section {
-      flex: 1;
-      min-width: 300px;
+
+    .shipping{
+      h2{
+        margin-top: 36px;
+        margin-bottom: 10px;
+      }
+      form{
+        margin-top: 36px;
+        margin-bottom: 10px;
+
+        input{
+          margin-top: 10px;
+          margin-bottom: 16px;
+          margin-left: 10px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          text-align: left;
+        }
+        .dropdown{
+          margin-top: 10px;
+          margin-bottom: 16px;
+          margin-left: 10px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          text-align: left;
+        }
+      }
     }
-    
-    .orange-box {
-      background-color: orange;
-      padding: 10px;
+   }
+  
+   #x2{
+
+    h2{
+      margin-top: 150px;
       margin-bottom: 10px;
     }
+
+    form{
+      margin-top: 36px;
+      margin-bottom: 10px;
+
+      input{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: left;
+      }
+
+      .dropdown2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: left;
+      }
     
-    .payment-options button {
-      margin-right: 5px;
-    }
-    
-    .payment-options p {
-      margin-top: 5px;
-    }
-    
-    h3 {
-      margin-top: 0;
-    }
-    
-    #newsletter {
-      appearance: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      width: 16px;
-      height: 16px;
-      border: 2px solid orange;
-      border-radius: 4px;
-      vertical-align: middle;
-      margin-left: 5px;
-    }
-    
-    #newsletter:checked {
-      background-color: orange;
-    }
-  }
-  
-  .form-group {
+   }
+ }
+
+ #x3{
+  border: #060606;
+  h2{
+    margin-top: 150px;
     margin-bottom: 10px;
   }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .dropdown {
-    position: relative;
-  }
-  
-  .dropdown select {
-    width: 100%;
-    padding: 5px;
-  }
-  
-  .item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .item img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-  }
-  
-  .delete-button {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
-  .button-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .pay-button,
-  .cancel-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  /* Media Queries */
-  @media (min-width: 768px) {
-    /* Medium screens */
-    .checkout-grid {
-      justify-content: space-between;
+ }
+    img{
+      width: 68px ; 
+      height: 66px;
     }
+
   }
-  
-  @media (min-width: 992px) {
-    /* Large screens */
-    .checkout-section {
-      flex-basis: 33.33%;
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    /* Extra large screens */
-    .checkout-section {
-      flex-basis: 25%;
-    }
-  }
-  }
-  
 }
