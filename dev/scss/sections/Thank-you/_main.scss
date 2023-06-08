@@ -1,0 +1,40 @@
+#main{
+div{
+    img{
+        margin-left: 100px;
+    }
+    h1{
+        color: #315984;
+    }
+    
+    h2{
+        color: #315984;
+    }
+    h3{
+        color: #315984;
+    }
+    h4{
+        color: #315984;
+    }
+    p{
+        color: #315984;
+    }
+}
+@include md{
+    height: 60vh;
+    background-position: left bottom;
+}
+
+@include xl{
+    height: 70vh;
+}
+
+@include lg{
+    height: 70vh;
+}
+
+@include xxl{
+    height: 100vh;
+    background-position: center bottom;
+}
+}
