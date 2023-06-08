@@ -557,12 +557,18 @@ a {
 @media (min-width: 768px) {
   #footer > div {
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 16px auto 16px;
     grid-template-areas: "f1 f2" "f3 f4";
-    gap: 16px;
+    gap: 10px;
   }
 }
 @media (min-width: 1024px) {
+  #footer > div {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "f1 f2 f3 f4";
+  }
+}
+@media (min-width: 1200px) {
   #footer > div {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "f1 f2 f3 f4";
@@ -1125,13 +1131,19 @@ a {
   #checkout div {
     display: grid;
     grid-template-columns: 50% auto;
-    grid-template-areas: "f1 f2" "f1 f3";
+    grid-template-areas: "x1 x2" "x1 x3";
   }
 }
 @media (min-width: 1024px) {
   #checkout div {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "f1 f2 f3";
+    grid-template-areas: "x1 x2 x3";
+  }
+}
+@media (min-width: 1200px) {
+  #checkout div {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "x1 x2 x3";
   }
 }
 #checkout div #x1 .faster h2 {

@@ -1185,7 +1185,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/thanks\/_main.scss" : {
+    "\/dev\/scss\/sections\/Thank-you\/_main.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -1194,7 +1194,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/thanks\/_main.css",
+      "oAP" : "\/dev\/scss\/sections\/Thank-you\/_main.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
