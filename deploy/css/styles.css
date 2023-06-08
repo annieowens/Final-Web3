@@ -1279,14 +1279,88 @@ a {
   padding-right: 206px;
   text-align: left;
 }
-#checkout div #x3 {
-  border: #060606;
+#checkout div #x2 .pay-button {
+  margin-top: 36px;
+  margin-right: 16px;
+  background-color: #76A4D0;
+  color: aliceblue;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
 }
-#checkout div #x3 h2 {
-  margin-top: 150px;
+#checkout div #x2 .cancel-button {
+  margin-top: 36px;
+  margin-right: 16px;
+  background-color: #9A031E;
+  color: aliceblue;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+}
+#checkout div #x3 {
+  background-color: #ECF2F8;
+  padding-left: 36px;
+  padding-right: 36px;
+  border-bottom: #040404;
+}
+#checkout div #x3 h1 {
+  font-size: x-large;
+  margin-top: 50px;
   margin-bottom: 10px;
+}
+#checkout div #x3 .quanity h6 {
+  margin-left: 10px;
+  text-align: left;
+}
+#checkout div #x3 .quanity .amount {
+  margin-top: 0;
+  margin-left: 5px;
+  padding-left: 5px;
+  padding-top: 0;
+}
+#checkout div #x3 .quanity .close {
+  width: 18.5px;
+  height: 18.5px;
+}
+#checkout div #x3 p {
+  margin-left: 20px;
+  margin-bottom: 5px;
+  font-size: small;
+  font-style: italic;
+  color: #494848;
+  text-align: left;
+}
+#checkout div #x3 h5 {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 5px;
+  font-size: small;
+  font-style: italic;
+  color: #494848;
+  text-align: left;
 }
 #checkout div img {
   width: 68px;
   height: 66px;
+}
+#checkout .cost {
+  word-wrap: normal;
+}
+#checkout .cost h3 {
+  margin-top: 16px;
+  font-size: medium;
+  word-wrap: normal;
+}
+#checkout .cost h4 {
+  margin-left: 80px;
+  margin-top: 16px;
+  font-size: small;
+}
+#checkout .cost h2 {
+  margin-top: 16px;
+  font-size: large;
 }
