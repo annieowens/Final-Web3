@@ -14,22 +14,35 @@
 
         <form action="#">
           <input type="email" placeholder="Email" id="email">
+          <div>
           <input type="checkbox" name="sign up for exclusive offers and promotions" id="newsletter">
           <p>Sign up for exclusive offers and promotions</p>
+          </div>
         </form>
       </section>
 
       <section class="shipping">
         <h2>Shipping Address</h2>
         <form action="#">
-         <div class="Info">
-          <div></div>
-          <input type="First Name" placeholder="First Name">
-          <input type="Last Name" placeholder="Last Name">
-          <input type="Address" placeholder="Address">
-          <input type="Apt" placeholder="Apt">
-          <input type="City" placeholder="City">
-         </div>
+
+          <div >
+            <input type="First Name" placeholder="First Name" id="names">
+          <input type="Last Name" placeholder="Last Name" id="names">
+          </div>
+          
+          <div>
+            <input type="Address" placeholder="Address" class="Address">
+          </div>
+
+            <div>
+              <input type="Apt" placeholder="Apt" class="apt">
+            </div>
+          
+          
+            <div>
+              <input type="City" placeholder="City" class="city">
+            </div>
+            
 
           <div class="dropdown">
             <select>
@@ -40,21 +53,18 @@
               <option value="UK">United Kingdom</option>
               <!-- Add more countries here -->
             </select>
-          </div>
-
-          <div class="dropdown">
             <select>
               <option value="">Select State</option>
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
               <option value="AZ">Arizona</option>
               <!-- Add more states here -->
+
+              <input type="Zipcode" placeholder="Zipcode" class="zipcode">
             </select>
           </div>
-          <input type="Zipcode" placeholder="Zipcode">
         </form>
       </section>
-
     </section>
 
     <section id="x2">
@@ -62,41 +72,34 @@
         <h2>Credit Card </h2>
 
         <form>
-          <div class="form-group">
-            <input type="Card Holder Name" placeholder="Card Holder Name">
+          <div>
+            <input type="Card Holder Name" placeholder="Card Holder Name" class="holdername">
           </div>
 
-          <div class="form-group">
-            <input type="Card Number" placeholder="Card Number">
+          <div>
+            <input type="Card Number" placeholder="Card Number" class="cardnumber">
           </div>
 
           <div class="dropdown2">
-            <select>
+            <select class="month">
               <option value="">Month</option>
               <option value="May">May</option>
               <option value="June">June</option>
               <option value="July">July</option>
-              <!-- Add more states here -->
             </select>
-          </div>
 
-
-          <div class="dropdown2">
-            <select>
+            <select class="year">
               <option value="">Year</option>
               <option value="2023">2023</option>
               <option value="2024">2024</option>
               <option value="2025">2025</option>
               <!-- Add more states here -->
             </select>
+              <input type="CVV" placeholder="CVV" class="cvv">
           </div>
 
-            <div class="form-group">
-              <input type="CVV" placeholder="CVV">
-            </div>
-
-            <div class="form-group">
-              <input type="Promo Code" placeholder="Promo Code">
+            <div>
+              <input type="Promo Code" placeholder="Promo Code" class="promo">
             </div>
         </form>
       </section>
