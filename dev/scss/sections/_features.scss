@@ -2,60 +2,65 @@
     features
 ============= */
 
-#features{
+#features{  
 
-   #c1{
-    background-image: url("../img/features/c.png");
-    background-size: cover;
-    height: 50vh;
-    display: flex;
-    justify-content: flex-end;
-
-    h1{
-        position: absolute;
-        color: #2D5983;
-        margin-top: 5vh;
-        margin-left: 81vh;
-        margin-right: 5vh;
-
-       }   
-
-       h2{
-        position: absolute;
-        color: #2D5983;
-        margin-top: 5vh;
-        margin-left: 81vh;
-        margin-right: 5vh;
-
-       }  
-   }
+    ul{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        gap: 16px;
     
-      #c2{
-        background-image: url("../img/features/f.jpg");
-        
-        height: 50vh;
-        display: flex;
-        justify-content: flex-end;
- 
-        h1{
-         position: absolute;
-         color: #2D5983;
-         margin-top: 5vh;
-         margin-left: 81vh;
-         margin-right: 5vh;
- 
-        }  
- 
-        h2{
-         position: absolute;
-         color: #2D5983;
-         margin-top: 5vh;
-         margin-left: 81vh;
-         margin-right: 5vh;
- 
-        } 
-      } 
+        li {
+            background-size: cover;
+            height: 50vh;
+            width: 100%;
+        }
+    
+        #c1 {
+            background-image: url("../img/features/c.png");
+            margin-left: 40px;
+        }
+    
+        #c2 {
+            background-image: url("../img/features/f.jpg");
+        }
+    
+        .pop{
+            h1{
+                color: #2D5983;
+                margin-top: 5vh;
+                margin-left: 81vh;
+                margin-right: 5vh;
+            }
 
+            h2{
+                color: #2D5983;
+                margin-top: 5vh;
+                margin-left: 81vh;
+                margin-right: 5vh;
+            }
+    
+           }  
+    
+           .functions{
+            h1{
+                color: #2D5983;
+                margin-top: 5vh;
+                margin-bottom: 51vh;
+                margin-right: 5vh;
+            }
+
+            h2{
+                color: #2D5983;
+                margin-top: 5vh;
+                margin-left: 1vh;
+                margin-right: 5vh;
+            }
+    
+           }
+       }
+    
+}
+ /* =============
     @include md{
         height: 60vh;
         background-position: left bottom;
@@ -74,5 +79,4 @@
         background-position: center bottom;
     }   
 
-           
-}
+============= */

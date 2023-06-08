@@ -58,11 +58,11 @@
 
             button {
                 border: 1px solid rgb(252, 249, 249);
-                background-color: #315984;
+                background-color: #2166b6;
                 color: rgb(249, 249, 249);
                 border-radius: 20px;
                 padding: 6px 10px;
-                margin-top: 12px;
+                margin-top: 16px;
                 margin-left: 0;
                 margin-bottom: 12px;
                 display: block;
@@ -76,6 +76,7 @@
     #nt {
         @include md {
             grid-area: nt;
+            color: #2166b6;
         }
     }
 
@@ -104,9 +105,16 @@
         }
     }
 
+    h1 {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-size: large;
+    }
+
     h4 {
         margin-top: 16px;
         margin-bottom: 16px;
+        font-size: medium;
     }
 
     h3 {

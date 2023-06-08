@@ -1,40 +1,44 @@
+/* =============
+    main
+============= */
 #main{
-div{
-    img{
-        margin-left: 100px;
+
+    ul{
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 16px;
+
+    li {
+        height: 50vh;
+        width: 1200%;
+        
     }
-    h1{
-        color: #315984;
+
+    #j1 {
+        background-image: url("../img/cart/Group 6.svg");
+        background-repeat: no-repeat;
     }
-    
+
+    div{
+        display: flex;
+
+        h1{
+            color: #315984;
+            text-align: center;
+        }
+    }
+
     h2{
         color: #315984;
+        text-align: center;
     }
+
     h3{
         color: #315984;
+        text-align: center;
     }
-    h4{
-        color: #315984;
-    }
-    p{
-        color: #315984;
-    }
-}
-@include md{
-    height: 60vh;
-    background-position: left bottom;
+
+  }
 }
 
-@include xl{
-    height: 70vh;
-}
 
-@include lg{
-    height: 70vh;
-}
-
-@include xxl{
-    height: 100vh;
-    background-position: center bottom;
-}
-}
