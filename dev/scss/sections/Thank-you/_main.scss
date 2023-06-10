@@ -4,41 +4,57 @@
 #main{
 
     ul{
-    display: grid;
-    grid-template-columns: 50% auto;
+    display: flex;
     gap: 16px;
 
     li {
-        height: 50vh;
-        width: 1200%;
+        height: 20vh;
+        width: 100%;
         
     }
-
+           
     #j1 {
         background-image: url("../img/cart/Group 6.svg");
         background-repeat: no-repeat;
+        margin-top: 5vh;
+        margin-left: 10vh;
     }
+  
 
-    div{
-        display: flex;
+}
+  .thanks{
+    color:#0d5e8d7f;
+    margin-left: 40vh;
+    margin-bottom: 16px;
+    font-size: xx-large;
+}
+.purchase{
+    color:#0d5e8d7f;
+    margin-left: 25vh;
+    margin-bottom: 16px;
+    font-size: x-large;
+}
+.order{
+    color:#0d5e8d7f;
+    margin-left: 30vh;
+    margin-bottom: 16px;
+    font-size: large;
+}
+.hello{
+    color:#0d5e8d7f;
+    margin-left: 25vh;
+    margin-bottom: 16px;
+    font-size: medium;
+}
+.tracking{
+    color:#0d5e8d7f;
+    margin-left: 27vh;
+    margin-bottom: 10vh;
+    font-size: medium;
 
-        h1{
-            color: #315984;
-            text-align: center;
-        }
-    }
 
-    h2{
-        color: #315984;
-        text-align: center;
-    }
+}
 
-    h3{
-        color: #315984;
-        text-align: center;
-    }
-
-  }
 }
 
 

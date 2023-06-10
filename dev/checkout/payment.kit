@@ -4,9 +4,11 @@
 
       <section class="faster">
         <h2>Faster Check-Out</h2>
-        <button>Paypal</button>
-        <button>@Pay</button>
-        <p>to pay with credit card continue below</p>
+        <div class="payments">
+        <a href="https://www.paypal.com/us/home"><button>Paypal</button></a>
+        <a href="https://www.klarna.com/us/"><button>@Klarna</button></a>
+        </div>
+        <p>To pay with credit card continue below</p>
       </section>
 
       <section class="contact">
@@ -14,7 +16,7 @@
 
         <form action="#">
           <input type="email" placeholder="Email" id="email">
-          <div>
+          <div class="signup">
           <input type="checkbox" name="sign up for exclusive offers and promotions" id="newsletter">
           <p>Sign up for exclusive offers and promotions</p>
           </div>
@@ -43,26 +45,26 @@
               <input type="City" placeholder="City" class="city">
             </div>
             
-
-          <div class="dropdown">
-            <select>
+            <input type="Zipcode" placeholder="Zipcode" class="zipcode">
+          
+            <div class="dropdown4">
+             <select class="country">
               <option value="">Select Country</option>
               <option value="US">United States</option>
               <option value="CA">Canada</option>
               <option value="MX">Mexico</option>
               <option value="UK">United Kingdom</option>
               <!-- Add more countries here -->
-            </select>
-            <select>
+             </select>
+             <select class="state">
               <option value="">Select State</option>
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
               <option value="AZ">Arizona</option>
               <!-- Add more states here -->
-            </select>
+             </select>
             
           </div>
-          <input type="Zipcode" placeholder="Zipcode" class="zipcode">
         </form>
       </section>
     </section>
@@ -80,7 +82,7 @@
             <input type="Card Number" placeholder="Card Number" class="cardnumber">
           </div>
 
-          <div class="dropdown2">
+          <div class="dropdown3">
             <select class="month">
               <option value="">Month</option>
               <option value="May">May</option>
@@ -95,7 +97,7 @@
               <option value="2025">2025</option>
               <!-- Add more states here -->
             </select>
-              <input type="CVV" placeholder="CVV" class="cvv">
+            <input type="CVV" placeholder="CVV" class="cvv">
           </div>
 
             <div>
@@ -105,19 +107,18 @@
       </section>
 
       <div class="button-container">
-        <button class="pay-button">Pay Now</button>
-        <button class="cancel-button">Cancel</button>
+        <a href="thankyou.html"><button class="pay-button">Pay Now</button></a>
+        <a href="index.html"><button class="cancel-button">Cancel</button></a>
       </div>
     </section>
 
     <section id="x3">
       <h1> Cart Summary</h1>
-      <section>
+      <section id="cart1">
         <div class="quanity">
-          <img src="img/cart/cart1.png" alt="tea">
+          <img src="img/cart/cart1.png" alt="juice">
           <div>
             <h6> White Kettle </h6>
-
             <!-- <section> -->
               <select name="quanity" class="amount">
                 <option value="1">1</option>
@@ -127,104 +128,103 @@
                 <option value="5">5</option>
                 <option value="6">6</option>
                 </select>
-                <img src="img/cart/close.svg" alt="close" class="close">
                 <h5>$453.96</h5>
-            <!-- </section> -->
-  
+                <img src="img/cart/close.svg" alt="close" class="close">
+                
+                <!-- </section> -->
           </div>
         <p>$453.96</p>
       </div>
       </section>
 
-      <section>
+      <section id="cart2">
         <div class="quanity">
           <img src="img/cart/cart2.png" alt="juice">
-          <h6> Red Jucier </h6>
-          <section>
-            <select name="quanity" class="amount">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              </select>
-              <img src="img/cart/close.svg" alt="close" class="close">
-              <h5>$453.96</h5>
-          </section>
-        </div>
+          <div>
+            <h6> Red Jucier </h6>
+            <!-- <section> -->
+              <select name="quanity" class="amount">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                </select>
+                <h5>$453.96</h5>
+                <img src="img/cart/close.svg" alt="close" class="close">
+                
+                <!-- </section> -->
+          </div>
         <p>$453.96</p>
+      </div>
       </section>
 
-      <section class="quanity">
-        <div>
+      <section id="cart3">
+        <div class="quanity">
           <img src="img/cart/cart3.png" alt="mixer">
-          <h6> Black Mixer </h6>
-          <section>
-            <select name="quanity" class="amount">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              </select>
-              <img src="img/cart/close.svg" alt="close" class="close">
-              <h5>$453.96</h5>
-          </section>
-        </div>
+          <div>
+            <h6> Black Mixer </h6>
+            <!-- <section> -->
+              <select name="quanity" class="amount">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                </select>
+                <h5>$453.96</h5>
+                <img src="img/cart/close.svg" alt="close" class="close">
+                
+            <!-- </section> -->
+          </div>
         <p>$453.96</p>
+      </div>
       </section>
 
-      <section class="quanity">
-        <div>
-          <img src="img/cart/cart4.jpg" alt="mixer">
-          <h6> Black Mixer </h6>
-          <section>
-            <select name="quanity" class="amount">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              </select>
-              <img src="img/cart/close.svg" alt="close" class="close">
-              <h5>$453.96</h5>
-          </section>
-        </div>
+      <section id="cart4">
+        <div class="quanity">
+          <img src="img/cart/cart4.jpg" alt="toaster">
+          <div>
+            <h6> Sage Toaster </h6>
+            <!-- <section> -->
+              <select name="quanity" class="amount">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                </select>
+                <h5>$453.96</h5>
+                <img src="img/cart/close.svg" alt="close" class="close">
+                
+            <!-- </section> -->
+          </div>
         <p>$453.96</p>
+      </div>
       </section>
 
-      <section class="cost">
-        <div>
-          <h3>Subtotal</h3>
-          <h4>$7588</h4>
-        </div>
-
-        <div>
-          <h3>Discount</h3>
-          <h4> -$178</h4>
-        </div>
-
-        <div>
-          <h3>Shipping</h3>
-          <h4>$88</h4>
-        </div>
-
-        <div>
-          <h3>City Tax</h3>
-          <h4>$67</h4>
-        </div>
-
-        <div>
-        <h2>Total</h2>
-        <h4>$7567</h4>
+      <section id="t1">
+        <div class="grid-container">
+          <div class="column1">
+            <h3>Subtotal</h3>
+            <h3>Discount</h3>
+            <h3>Shipping</h3>
+            <h3>City Tax</h3>
+          </div>
+          <div class="column2">
+            <h4>$343</h4>
+            <h4>$93</h4>
+            <h4>$8</h4>
+            <h4>$32</h4>
+          </div>
         </div>
       </section>
 
     </section>
 
-</section>
+  </section>
 </div>
 </section>

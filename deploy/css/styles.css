@@ -1142,32 +1142,48 @@ a {
     main
 ============= */
 #main ul {
-  display: grid;
-  grid-template-columns: 50% auto;
+  display: flex;
   gap: 16px;
 }
 #main ul li {
-  height: 50vh;
-  width: 1200%;
+  height: 20vh;
+  width: 100%;
 }
 #main ul #j1 {
   background-image: url("../img/cart/Group 6.svg");
   background-repeat: no-repeat;
+  margin-top: 5vh;
+  margin-left: 10vh;
 }
-#main ul div {
-  display: flex;
+#main .thanks {
+  color: rgba(13, 94, 141, 0.4980392157);
+  margin-left: 40vh;
+  margin-bottom: 16px;
+  font-size: xx-large;
 }
-#main ul div h1 {
-  color: #315984;
-  text-align: center;
+#main .purchase {
+  color: rgba(13, 94, 141, 0.4980392157);
+  margin-left: 25vh;
+  margin-bottom: 16px;
+  font-size: x-large;
 }
-#main ul h2 {
-  color: #315984;
-  text-align: center;
+#main .order {
+  color: rgba(13, 94, 141, 0.4980392157);
+  margin-left: 30vh;
+  margin-bottom: 16px;
+  font-size: large;
 }
-#main ul h3 {
-  color: #315984;
-  text-align: center;
+#main .hello {
+  color: rgba(13, 94, 141, 0.4980392157);
+  margin-left: 25vh;
+  margin-bottom: 16px;
+  font-size: medium;
+}
+#main .tracking {
+  color: rgba(13, 94, 141, 0.4980392157);
+  margin-left: 27vh;
+  margin-bottom: 10vh;
+  font-size: medium;
 }
 
 #checkout {
@@ -1203,14 +1219,14 @@ a {
     grid-template-areas: "x1 x2 x3";
   }
 }
-#checkout > div #x1 .faster {
-  border: 1px solid red;
-}
 #checkout > div #x1 .faster h2 {
   margin-top: 36px;
   margin-bottom: 10px;
 }
-#checkout > div #x1 .faster button {
+#checkout > div #x1 .faster .payments {
+  border: 1px solid orange;
+}
+#checkout > div #x1 .faster .payments button {
   margin-left: 10px;
   color: aliceblue;
   background-color: #76A4D0;
@@ -1243,26 +1259,25 @@ a {
   width: 100%;
   box-sizing: border-box;
 }
-#checkout > div #x1 .contact form #newsletter {
+#checkout > div #x1 .contact form .signup #newsletter {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  width: 16px;
+  padding-left: 16px;
   height: 16px;
   border: 2px solid orange;
   border-radius: 4px;
   vertical-align: middle;
-  margin-left: 5px;
+  margin-right: 156px;
 }
-#checkout > div #x1 .contact form #newsletter:checked {
+#checkout > div #x1 .contact form .signup #newsletter:checked {
   background-color: orange;
 }
-#checkout > div #x1 .contact form p {
+#checkout > div #x1 .contact form .signup p {
   margin-top: 5px;
   color: #868686;
   font-size: small;
   font-style: italic;
-  text-align: start;
 }
 #checkout > div #x1 .shipping h2 {
   margin-top: 36px;
@@ -1299,6 +1314,7 @@ a {
   text-align: left;
 }
 #checkout > div #x1 .shipping form .city {
+  display: flex;
   margin-top: 10px;
   margin-bottom: 16px;
   margin-left: 10px;
@@ -1307,23 +1323,41 @@ a {
   padding-right: 206px;
   text-align: left;
 }
-#checkout > div #x1 .shipping form .dropdown {
-  display: flex;
+#checkout > div #x1 .shipping form .dropdown4 {
+  margin-left: 8px;
+  margin-top: 10px;
+  margin-bottom: 10vh;
 }
-#checkout > div #x1 .shipping form .dropdown select {
-  width: 100%;
+#checkout > div #x1 .shipping form .dropdown4 .country {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 18px;
+  text-align: center;
+}
+#checkout > div #x1 .shipping form .dropdown4 .state {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 18px;
+  padding-left: 10px;
+  text-align: center;
 }
 #checkout > div #x1 .shipping form .zipcode {
+  display: flex;
   margin-top: 10px;
-  padding-left: 16px;
-  width: 100%;
-  box-sizing: border-box;
+  margin-bottom: 16px;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 206px;
+  text-align: left;
 }
 #checkout > div #x2 h2 {
   margin-top: 150px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  margin-left: 2px;
 }
 #checkout > div #x2 .holdername {
+  margin-top: 14px;
   margin-bottom: 16px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1331,41 +1365,53 @@ a {
   text-align: left;
 }
 #checkout > div #x2 .cardnumber {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 206px;
   text-align: left;
 }
-#checkout > div #x2 .dropdown2 {
-  text-align: left;
-  margin-bottom: 16px;
+#checkout > div #x2 .dropdown3 {
+  margin-top: 10px;
+  margin-bottom: 19px;
 }
-#checkout > div #x2 .dropdown2 .month {
-  padding-bottom: 10px;
-}
-#checkout > div #x2 .dropdown2 .cvv {
-  padding-right: 0px;
-}
-#checkout > div #x2 .dropdown2 select {
-  margin-left: 5px;
-}
-#checkout > div #x2 .promo {
+#checkout > div #x2 .dropdown3 .month {
   margin-bottom: 16px;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-right: 18px;
+  text-align: center;
+}
+#checkout > div #x2 .dropdown3 .year {
+  margin-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 18px;
+  padding-left: 10px;
+  text-align: center;
+}
+#checkout > div #x2 .dropdown3 .cvv {
+  margin-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 18px;
+  text-align: left;
+}
+#checkout > div #x2 .promo {
+  padding-top: 10px;
+  padding-bottom: 8px;
   padding-right: 206px;
   text-align: left;
 }
 #checkout > div #x2 .pay-button {
-  margin-top: 36px;
+  margin-top: 26px;
   margin-right: 16px;
   background-color: #76A4D0;
   color: aliceblue;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 75px;
+  padding-right: 75px;
   text-align: center;
 }
 #checkout > div #x2 .cancel-button {
@@ -1373,74 +1419,218 @@ a {
   margin-right: 16px;
   background-color: #9A031E;
   color: aliceblue;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
   text-align: center;
 }
 #checkout > div #x3 {
+  margin-top: 20px;
   background-color: #ECF2F8;
   padding-left: 36px;
   padding-right: 36px;
-  border-bottom: #040404;
+  border: 1px solid rgb(2, 2, 2);
 }
-#checkout > div #x3 h1 {
+#checkout > div #x3 #cart1 {
+  border-bottom: 1px solid rgb(2, 2, 2);
+  margin-bottom: 16px;
+}
+#checkout > div #x3 #cart1 h1 {
   font-size: x-large;
   margin-top: 50px;
   margin-bottom: 10px;
 }
-#checkout > div #x3 .quanity {
+#checkout > div #x3 #cart1 .quanity {
   display: grid;
   grid-template-columns: 25% auto;
 }
-#checkout > div #x3 .quanity img {
+#checkout > div #x3 #cart1 .quanity img {
   width: 68px;
   height: 66px;
 }
-#checkout > div #x3 .quanity div {
+#checkout > div #x3 #cart1 .quanity div {
+  margin-right: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
 }
-#checkout > div #x3 .quanity .amount {
+#checkout > div #x3 #cart1 .quanity .amount {
+  margin-right: 10px;
   margin-top: 0;
   margin-left: 5px;
   padding-left: 5px;
   padding-top: 0;
 }
-#checkout > div #x3 .quanity .close {
+#checkout > div #x3 #cart1 .quanity .close {
+  margin-right: 10px;
   width: 18.5px;
   height: 18.5px;
 }
-#checkout > div #x3 p {
-  margin-left: 20px;
-  margin-bottom: 5px;
+#checkout > div #x3 #cart1 .quanity p {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
   font-size: small;
   font-style: italic;
   color: #494848;
   text-align: left;
 }
-#checkout > div #x3 h5 {
+#checkout > div #x3 #cart1 .quanity h5 {
   font-size: small;
   font-style: italic;
   color: #494848;
 }
-#checkout .cost {
-  word-wrap: normal;
+#checkout > div #x3 #cart2 {
+  border-bottom: 1px solid rgb(2, 2, 2);
+  margin-bottom: 16px;
 }
-#checkout .cost h3 {
-  margin-top: 16px;
-  font-size: medium;
-  word-wrap: normal;
+#checkout > div #x3 #cart2 h1 {
+  font-size: x-large;
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
-#checkout .cost h4 {
-  margin-left: 80px;
-  margin-top: 16px;
+#checkout > div #x3 #cart2 .quanity {
+  display: grid;
+  grid-template-columns: 25% auto;
+}
+#checkout > div #x3 #cart2 .quanity img {
+  width: 68px;
+  height: 66px;
+}
+#checkout > div #x3 #cart2 .quanity div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#checkout > div #x3 #cart2 .quanity .amount {
+  margin-top: 0;
+  margin-left: 5px;
+  padding-left: 5px;
+  padding-top: 0;
+}
+#checkout > div #x3 #cart2 .quanity .close {
+  width: 18.5px;
+  height: 18.5px;
+}
+#checkout > div #x3 #cart2 .quanity p {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
   font-size: small;
+  font-style: italic;
+  color: #494848;
+  text-align: left;
 }
-#checkout .cost h2 {
-  margin-top: 16px;
-  font-size: large;
+#checkout > div #x3 #cart2 .quanity h5 {
+  font-size: small;
+  font-style: italic;
+  color: #494848;
+}
+#checkout > div #x3 #cart3 {
+  border-bottom: 1px solid rgb(2, 2, 2);
+  margin-bottom: 16px;
+}
+#checkout > div #x3 #cart3 h1 {
+  font-size: x-large;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+#checkout > div #x3 #cart3 .quanity {
+  display: grid;
+  grid-template-columns: 25% auto;
+}
+#checkout > div #x3 #cart3 .quanity img {
+  width: 68px;
+  height: 66px;
+}
+#checkout > div #x3 #cart3 .quanity div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#checkout > div #x3 #cart3 .quanity .amount {
+  margin-top: 0;
+  margin-left: 5px;
+  padding-left: 5px;
+  padding-top: 0;
+}
+#checkout > div #x3 #cart3 .quanity .close {
+  width: 18.5px;
+  height: 18.5px;
+}
+#checkout > div #x3 #cart3 .quanity p {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: small;
+  font-style: italic;
+  color: #494848;
+  text-align: left;
+}
+#checkout > div #x3 #cart3 .quanity h5 {
+  font-size: small;
+  font-style: italic;
+  color: #494848;
+}
+#checkout > div #x3 #cart4 {
+  border-bottom: 1px solid rgb(2, 2, 2);
+  margin-bottom: 16px;
+}
+#checkout > div #x3 #cart4 h1 {
+  font-size: x-large;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+#checkout > div #x3 #cart4 .quanity {
+  display: grid;
+  grid-template-columns: 25% auto;
+}
+#checkout > div #x3 #cart4 .quanity img {
+  width: 68px;
+  height: 66px;
+}
+#checkout > div #x3 #cart4 .quanity div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#checkout > div #x3 #cart4 .quanity .amount {
+  margin-top: 0;
+  margin-left: 5px;
+  padding-left: 5px;
+  padding-top: 0;
+}
+#checkout > div #x3 #cart4 .quanity .close {
+  width: 18.5px;
+  height: 18.5px;
+}
+#checkout > div #x3 #cart4 .quanity p {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: small;
+  font-style: italic;
+  color: #494848;
+  text-align: left;
+}
+#checkout > div #x3 #cart4 .quanity h5 {
+  font-size: small;
+  font-style: italic;
+  color: #494848;
+}
+#checkout > div .cost {
+  grid-template-columns: 50%;
+}
+#checkout > div .cost #t1 h3 {
+  font-size: medium;
+}
+#checkout > div .cost #t1 h4 {
+  font-size: medium;
+}
+#checkout > div .cost #t2 h3 {
+  font-size: medium;
+}
+#checkout > div .cost #t2 h4 {
+  font-size: medium;
 }
