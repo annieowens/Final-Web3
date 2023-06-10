@@ -1,462 +1,347 @@
-#checkout{
+#checkout {
   display: grid;
-    grid-template-columns: 10px auto 10px;
-    grid-template-areas: ". checkout .";
-    @include xxl{
-      grid-template-columns: auto 1200px auto;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". checkout .";
+
+  @include xxl {
+    grid-template-columns: auto 1200px auto;
   }
 
-  >div{
+  >div {
     grid-area: checkout;
 
-        @include md{
-            display: grid;
-            grid-template-columns: 50% auto ;
-            grid-template-areas: 
-            "x1 x2"
-            "x1 x3";
-            gap:16px;
-        }
-
-        @include lg{
-            grid-template-columns: repeat(3, 1fr) ;
-            grid-template-areas: 
-            "x1 x2 x3";
-        }
-
-        @include xl{
-          grid-template-columns: repeat(3, 1fr) ;
-          grid-template-areas: 
-          "x1 x2 x3";
-      }
-
-   #x1{
-
-    .faster{
-      h2{
-        margin-top: 36px;
-        margin-bottom: 10px;
-      }
-      .payments{
-        border: 1px solid orange;
-        
-        button{
-          margin-left: 10px;
-          color: aliceblue;
-          background-color: #76A4D0;
-          width: 93px ;
-          height: 28;
-          box-sizing: border-box;
-        }
-      }
-      p{
-        margin-top: 16px;
-        color: #868686;
-        font-size: small;
-        font-style: italic;
-      }
+    @include md {
+      display: grid;
+      grid-template-columns: 50% auto;
+      grid-template-areas:
+        "x1 x2"
+        "x1 x3";
+      gap: 16px;
     }
 
-    .contact{
-      h2{
-        margin-top: 16px;
-        margin-bottom: 10px;
-      }
-      form{
+    @include lg {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        "x1 x2 x3";
+    }
 
-        #email{
-          margin-top: 10px;
-          margin-bottom: 16px;
-          margin-left: 10px;
-          padding-top: 10px;
-          padding-bottom: 10px;
-          padding-right: 206px;
-          text-align: left;
-          
+    @include xl {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        "x1 x2 x3";
+    }
+
+    #x1 {
+
+      .faster {
+        h2 {
+          margin-top: 36px;
+          margin-bottom: 10px;
         }
 
-        div{
-          display: flex;
-          justify-content: flex-end;
-          width: 100%;
-          box-sizing: border-box;
+        .payments {
+          border: 1px solid orange;
+
+          button {
+            margin-left: 10px;
+            color: aliceblue;
+            background-color: #76A4D0;
+            width: 93px;
+            height: 28;
+            box-sizing: border-box;
+          }
         }
-       .signup{
-        #newsletter {
-          appearance: none;
-          -webkit-appearance: none;
-          -moz-appearance: none;
-          padding-left: 16px;
-          height: 16px;
-          border: 2px solid orange;
-          border-radius: 4px;
-          vertical-align: middle;
-          margin-right: 156px;
-          
-        }
-        
-        #newsletter:checked {
-          background-color: orange;
-        }
-        
-        p{
-          margin-top: 5px;
+
+        p {
+          margin-top: 16px;
           color: #868686;
           font-size: small;
           font-style: italic;
         }
-       }
       }
-    }
 
-    .shipping{
-      h2{
-        margin-top: 36px;
-        margin-bottom: 10px;
-      }
-      form{
-        margin-top: 36px;
-        margin-bottom: 10px;
-
-        #names{
-          margin-top: 10px;
-          margin-bottom: 16px;
-          margin-left: 10px;
-          padding-top: 10px;
-          padding-bottom: 10px;
-          text-align: left;
+      .contact {
+        h2 {
+          margin-top: 16px;
+          margin-bottom: 10px;
         }
 
-        .Address{
-          margin-top: 10px;
-          margin-bottom: 16px;
-          margin-left: 10px;
-          padding-top: 10px;
-          padding-bottom: 10px;
-          padding-right: 206px;
-          text-align: left;
-        }
+        form {
 
-        .apt{
-          margin-top: 10px;
-          margin-bottom: 16px;
-          margin-left: 10px;
-          padding-top: 10px;
-          padding-bottom: 10px;
-          padding-right: 206px;
-          text-align: left;
-        }
+          #email {
+            margin-top: 10px;
+            margin-bottom: 16px;
+            margin-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 206px;
+            text-align: left;
 
-        .city{
-          display: flex;
-          margin-top: 10px;
-          margin-bottom: 16px;
-          margin-left: 10px;
-          padding-top: 10px;
-          padding-bottom: 10px;
-          padding-right: 206px;
-          text-align: left;
-        }
-
-        .dropdown4{
-          margin-left: 8px;
-          margin-top: 10px;
-          margin-bottom: 10vh;
-          
-          .country{
-           padding-top: 10px;
-           padding-bottom: 10px;
-           padding-right: 18px;
-           text-align: center;
-           
           }
-    
-          .state{
-           padding-top: 10px;
-           padding-bottom: 10px;
-           padding-right: 18px;
-           padding-left: 10px;
-           text-align: center;
-           } 
+
+          div {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            box-sizing: border-box;
+          }
+
+          .signup {
+            #newsletter {
+              appearance: none;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              padding-left: 16px;
+              height: 16px;
+              border: 2px solid orange;
+              border-radius: 4px;
+              vertical-align: middle;
+              margin-right: 156px;
+
+            }
+
+            #newsletter:checked {
+              background-color: orange;
+            }
+
+            p {
+              margin-top: 5px;
+              color: #868686;
+              font-size: small;
+              font-style: italic;
+            }
+          }
+        }
+      }
+
+      .shipping {
+        h2 {
+          margin-top: 36px;
+          margin-bottom: 10px;
         }
 
-        .zipcode{
-          display: flex;
-          margin-top: 10px;
-          margin-bottom: 16px;
-          margin-left: 10px;
-          padding-top: 10px;
-          padding-bottom: 10px;
-          padding-right: 206px;
-          text-align: left;
+        form {
+          margin-top: 36px;
+          margin-bottom: 10px;
+
+          #names {
+            margin-top: 10px;
+            margin-bottom: 16px;
+            margin-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: left;
+          }
+
+          .Address {
+            margin-top: 10px;
+            margin-bottom: 16px;
+            margin-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 206px;
+            text-align: left;
+          }
+
+          .apt {
+            margin-top: 10px;
+            margin-bottom: 16px;
+            margin-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 206px;
+            text-align: left;
+          }
+
+          .city {
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 16px;
+            margin-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 206px;
+            text-align: left;
+          }
+
+          .dropdown4 {
+            margin-left: 8px;
+            margin-top: 10px;
+            margin-bottom: 10vh;
+
+            .country {
+              padding-top: 10px;
+              padding-bottom: 10px;
+              padding-right: 18px;
+              text-align: center;
+
+            }
+
+            .state {
+              padding-top: 10px;
+              padding-bottom: 10px;
+              padding-right: 18px;
+              padding-left: 10px;
+              text-align: center;
+            }
+          }
+
+          .zipcode {
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 16px;
+            margin-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 206px;
+            text-align: left;
+          }
         }
       }
     }
-   }
-  
-   #x2{
 
-    h2{
-      margin-top: 150px;
-      margin-bottom: 8px;
-      margin-left: 2px;
-    }
+    #x2 {
 
-    .holdername{
-      margin-top: 14px;
-      margin-bottom: 16px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-right: 206px;
-      text-align: left;
-    }
-
-    .cardnumber{
-      margin-bottom: 10px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-right: 206px;
-      text-align: left;
-    }
-
-    .dropdown3{
-      margin-top: 10px;
-      margin-bottom: 19px;
-      
-      .month{
-       margin-bottom: 16px;
-       padding-top: 10px;
-       padding-bottom: 10px;
-       padding-right: 18px;
-       text-align: center;
-       
+      h2 {
+        margin-top: 150px;
+        margin-bottom: 8px;
+        margin-left: 2px;
       }
 
-      .year{
-       margin-bottom: 16px;
-       padding-top: 10px;
-       padding-bottom: 10px;
-       padding-right: 18px;
-       padding-left: 10px;
-       text-align: center;
-       } 
-
-       .cvv{
-       margin-bottom: 16px;
-       padding-top: 10px;
-       padding-bottom: 10px;
-       padding-right: 18px;
-       text-align: left;
-       }
-    }
-
-    .promo{
-      padding-top: 10px;
-      padding-bottom: 8px;
-      padding-right: 206px;
-      text-align: left;
-    }
-
-    .pay-button{
-      margin-top: 26px;
-      margin-right: 16px;
-      background-color:#76A4D0 ;
-      color: aliceblue;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: 75px;
-      padding-right: 75px;
-      text-align: center;
-
-    }
-
-    .cancel-button{
-      margin-top: 36px;
-      margin-right: 16px;
-      background-color:#9A031E ;
-      color: aliceblue;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: 50px;
-      padding-right: 50px;
-      text-align: center;
-    }
-
-
- 
-   }
- 
-
- #x3{
-  margin-top: 20px;
-  background-color: #ECF2F8;
-  padding-left: 36px;
-  padding-right: 36px;
-  border: 1px solid rgb(2, 2, 2);
-
-  #cart1{
-    border-bottom: 1px solid rgb(2, 2, 2);
-    margin-bottom: 16px;
-     h1{
-       font-size: x-large;
-       margin-top: 50px;
-       margin-bottom: 10px;
-     }
- 
-     .quanity{
- 
-       display: grid;
-       grid-template-columns: 25% auto;
-   
-       img{
-         width: 68px ; 
-         height: 66px;
-       }
-   
-       div{
-        margin-right: 10px;
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-       }
-       
-       .amount{
-        margin-right: 10px;
-         margin-top: 0;
-         margin-left: 5px;
-         padding-left: 5px;
-         padding-top: 0;
-       }
-       .close{
-         margin-right: 10px;
-         width:18.5px ;
-         height: 18.5px;
-       }
- 
-       p{
-        margin-top: 10px;
-        margin-left: 10px;
-        margin-bottom: 10px;
-        font-size: small;
-        font-style: italic;
-        color: #494848;
+      .holdername {
+        margin-top: 14px;
+        margin-bottom: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 206px;
         text-align: left;
       }
-     
-       h5{
-         // margin-left: 30px;
-         // margin-right: 30px;
-         // margin-bottom: 5px;
-         font-size: small;
-         font-style: italic;
-         color: #494848;
-         // text-align: left;
-       }
-      }
-         // img{
-           
-         // }
-       }
-     
-       
-    #cart2{
-     border-bottom: 1px solid rgb(2, 2, 2);
-     margin-bottom: 16px;
-      h1{
-        font-size: x-large;
-        margin-top: 50px;
+
+      .cardnumber {
         margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 206px;
+        text-align: left;
       }
-  
-      .quanity{
-  
-        display: grid;
-        grid-template-columns: 25% auto;
-    
-        img{
-          width: 68px ; 
-          height: 66px;
-        }
-    
-        div{
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
-        
-        .amount{
-          margin-top: 0;
-          margin-left: 5px;
-          padding-left: 5px;
-          padding-top: 0;
-        }
-        .close{
-          width:18.5px ;
-          height: 18.5px;
-        }
-  
-        p{
-          margin-top: 10px;
-          margin-left: 10px;
-          margin-bottom: 10px;
-          font-size: small;
-          font-style: italic;
-          color: #494848;
-          text-align: left;
-        }
-      
-        h5{
-          // margin-left: 30px;
-          // margin-right: 30px;
-          // margin-bottom: 5px;
-          font-size: small;
-          font-style: italic;
-          color: #494848;
-          // text-align: left;
-        }
-       }
-          // img{
-            
-          // }
+
+      .dropdown3 {
+        margin-top: 10px;
+        margin-bottom: 19px;
+
+        .month {
+          margin-bottom: 16px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-right: 18px;
+          text-align: center;
+
         }
 
-      #cart3{
-       border-bottom: 1px solid rgb(2, 2, 2);
-       margin-bottom: 16px;
-        h1{
+        .year {
+          margin-bottom: 16px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-right: 18px;
+          padding-left: 10px;
+          text-align: center;
+        }
+
+        .cvv {
+          margin-bottom: 16px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-right: 18px;
+          text-align: left;
+        }
+      }
+
+      .promo {
+        padding-top: 10px;
+        padding-bottom: 8px;
+        padding-right: 206px;
+        text-align: left;
+      }
+
+      .pay-button {
+        margin-top: 26px;
+        margin-right: 16px;
+        background-color: #76A4D0;
+        color: aliceblue;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 75px;
+        padding-right: 75px;
+        text-align: center;
+
+      }
+
+      .cancel-button {
+        margin-top: 36px;
+        margin-right: 16px;
+        background-color: #9A031E;
+        color: aliceblue;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: center;
+      }
+
+
+
+    }
+
+
+    #x3 {
+      margin-top: 20px;
+      background-color: #ECF2F8;
+      padding-left: 36px;
+      padding-right: 36px;
+      border: 1px solid rgb(2, 2, 2);
+
+      #cart1 {
+        border-bottom: 1px solid rgb(2, 2, 2);
+        margin-bottom: 16px;
+
+        h1 {
           font-size: x-large;
           margin-top: 50px;
           margin-bottom: 10px;
         }
-    
-        .quanity{
-    
+
+        .quanity {
+
           display: grid;
           grid-template-columns: 25% auto;
-      
-          img{
-            width: 68px ; 
+
+          img {
+            width: 68px;
             height: 66px;
           }
-      
-          div{
+
+          div {
+            margin-right: 10px;
             display: flex;
             justify-content: space-between;
             align-items: center;
           }
-          
-          .amount{
+
+          .amount {
+            margin-right: 10px;
             margin-top: 0;
             margin-left: 5px;
             padding-left: 5px;
             padding-top: 0;
           }
-          .close{
-            width:18.5px ;
+
+          .close {
+            margin-right: 10px;
+            width: 18.5px;
             height: 18.5px;
           }
-    
-          p{
+
+          p {
             margin-top: 10px;
             margin-left: 10px;
             margin-bottom: 10px;
@@ -465,8 +350,8 @@
             color: #494848;
             text-align: left;
           }
-        
-          h5{
+
+          h5 {
             // margin-left: 30px;
             // margin-right: 30px;
             // margin-bottom: 5px;
@@ -475,93 +360,289 @@
             color: #494848;
             // text-align: left;
           }
-         }
-            // img{
-              
-            // }
+        }
+
+        // img{
+
+        // }
+      }
+
+
+      #cart2 {
+        border-bottom: 1px solid rgb(2, 2, 2);
+        margin-bottom: 16px;
+
+        h1 {
+          font-size: x-large;
+          margin-top: 50px;
+          margin-bottom: 10px;
+        }
+
+        .quanity {
+
+          display: grid;
+          grid-template-columns: 25% auto;
+
+          img {
+            width: 68px;
+            height: 66px;
           }
 
+          div {
+            margin-right: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
 
-        #cart4{
-         border-bottom: 1px solid rgb(2, 2, 2);
-         margin-bottom: 16px;
-          h1{
-            font-size: x-large;
-            margin-top: 50px;
+          .amount {
+            margin-right: 10px;
+            margin-top: 0;
+            margin-left: 5px;
+            padding-left: 5px;
+            padding-top: 0;
+          }
+
+          .close {
+            margin-right: 10px;
+            width: 18.5px;
+            height: 18.5px;
+          }
+
+          p {
+            margin-top: 10px;
+            margin-left: 10px;
             margin-bottom: 10px;
-          }
-      
-          .quanity{
-      
-            display: grid;
-            grid-template-columns: 25% auto;
-        
-            img{
-              width: 68px ; 
-              height: 66px;
-            }
-        
-            div{
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-            }
-            
-            .amount{
-              margin-top: 0;
-              margin-left: 5px;
-              padding-left: 5px;
-              padding-top: 0;
-            }
-            .close{
-              width:18.5px ;
-              height: 18.5px;
-            }
-      
-            p{
-              margin-top: 10px;
-              margin-left: 10px;
-              margin-bottom: 10px;
-              font-size: small;
-              font-style: italic;
-              color: #494848;
-              text-align: left;
-            }
-          
-            h5{
-              // margin-left: 30px;
-              // margin-right: 30px;
-              // margin-bottom: 5px;
-              font-size: small;
-              font-style: italic;
-              color: #494848;
-              // text-align: left;
-            }
-           }
-              
-            }
-        }
-        .cost{
-          grid-template-columns: 50%;
-
-          #t1{
-            h3{
-              font-size: medium;
-            }
-            h4{
-              font-size: medium;
-            }
+            font-size: small;
+            font-style: italic;
+            color: #494848;
+            text-align: left;
           }
 
-          #t2{
-            h3{
-              font-size: medium;
-            }
-            h4{
-              font-size: medium;
-            }
+          h5 {
+            // margin-left: 30px;
+            // margin-right: 30px;
+            // margin-bottom: 5px;
+            font-size: small;
+            font-style: italic;
+            color: #494848;
+            // text-align: left;
           }
         }
- 
-     }
-   }
+
+        // img{
+
+        // }
+      }
+
+
+
+      #cart3 {
+        border-bottom: 1px solid rgb(2, 2, 2);
+        margin-bottom: 16px;
+
+        h1 {
+          font-size: x-large;
+          margin-top: 50px;
+          margin-bottom: 10px;
+        }
+
+        .quanity {
+
+          display: grid;
+          grid-template-columns: 25% auto;
+
+          img {
+            width: 68px;
+            height: 66px;
+          }
+
+          div {
+            margin-right: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          .amount {
+            margin-right: 10px;
+            margin-top: 0;
+            margin-left: 5px;
+            padding-left: 5px;
+            padding-top: 0;
+          }
+
+          .close {
+            margin-right: 10px;
+            width: 18.5px;
+            height: 18.5px;
+          }
+
+          p {
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            font-size: small;
+            font-style: italic;
+            color: #494848;
+            text-align: left;
+          }
+
+          h5 {
+            // margin-left: 30px;
+            // margin-right: 30px;
+            // margin-bottom: 5px;
+            font-size: small;
+            font-style: italic;
+            color: #494848;
+            // text-align: left;
+          }
+        }
+
+        // img{
+
+        // }
+      }
+
+
+
+
+      #cart4 {
+        border-bottom: 1px solid rgb(2, 2, 2);
+        margin-bottom: 16px;
+
+        h1 {
+          font-size: x-large;
+          margin-top: 50px;
+          margin-bottom: 10px;
+        }
+
+        .quanity {
+
+          display: grid;
+          grid-template-columns: 25% auto;
+
+          img {
+            width: 68px;
+            height: 66px;
+          }
+
+          div {
+            margin-right: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          .amount {
+            margin-right: 10px;
+            margin-top: 0;
+            margin-left: 5px;
+            padding-left: 5px;
+            padding-top: 0;
+          }
+
+          .close {
+            margin-right: 10px;
+            width: 18.5px;
+            height: 18.5px;
+          }
+
+          p {
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            font-size: small;
+            font-style: italic;
+            color: #494848;
+            text-align: left;
+          }
+
+          h5 {
+            // margin-left: 30px;
+            // margin-right: 30px;
+            // margin-bottom: 5px;
+            font-size: small;
+            font-style: italic;
+            color: #494848;
+            // text-align: left;
+          }
+        }
+
+        // img{
+
+        // }
+      }
+
+
+    }
+
+
+    .row {
+      display: flex;
+    }
+
+    h2 {
+      font-size: large;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: medium;
+      margin-bottom: 10px;
+    }
+
+    .column {
+      flex: 50%;
+      padding: 10px;
+      margin-top: 36px;
+
+    }
+
+    .column2 {
+      flex: 50%;
+      padding: 10px;
+      margin-left: 12vh;
+      margin-top: 36px;
+
+    }
+
+    .totalcost {
+      border-top: 1px solid rgb(2, 2, 2);
+
+      .row1 {
+        display: flex;
+      }
+
+      h2 {
+        font-size: large;
+        margin-bottom: 10px;
+      }
+
+      h3 {
+        font-size: medium;
+        margin-bottom: 10px;
+      }
+
+      .column3 {
+        flex: 50%;
+        padding: 10px;
+        height: 300px;
+        margin-top: 36px;
+
+      }
+
+      .column4 {
+        flex: 50%;
+        padding: 10px;
+        height: 300px;
+        margin-left: 12vh;
+        margin-top: 36px;
+
+      }
+    }
+
+
+
+  }
+}

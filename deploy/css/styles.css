@@ -1499,17 +1499,20 @@ a {
   height: 66px;
 }
 #checkout > div #x3 #cart2 .quanity div {
+  margin-right: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 #checkout > div #x3 #cart2 .quanity .amount {
+  margin-right: 10px;
   margin-top: 0;
   margin-left: 5px;
   padding-left: 5px;
   padding-top: 0;
 }
 #checkout > div #x3 #cart2 .quanity .close {
+  margin-right: 10px;
   width: 18.5px;
   height: 18.5px;
 }
@@ -1545,17 +1548,20 @@ a {
   height: 66px;
 }
 #checkout > div #x3 #cart3 .quanity div {
+  margin-right: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 #checkout > div #x3 #cart3 .quanity .amount {
+  margin-right: 10px;
   margin-top: 0;
   margin-left: 5px;
   padding-left: 5px;
   padding-top: 0;
 }
 #checkout > div #x3 #cart3 .quanity .close {
+  margin-right: 10px;
   width: 18.5px;
   height: 18.5px;
 }
@@ -1591,17 +1597,20 @@ a {
   height: 66px;
 }
 #checkout > div #x3 #cart4 .quanity div {
+  margin-right: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 #checkout > div #x3 #cart4 .quanity .amount {
+  margin-right: 10px;
   margin-top: 0;
   margin-left: 5px;
   padding-left: 5px;
   padding-top: 0;
 }
 #checkout > div #x3 #cart4 .quanity .close {
+  margin-right: 10px;
   width: 18.5px;
   height: 18.5px;
 }
@@ -1619,18 +1628,52 @@ a {
   font-style: italic;
   color: #494848;
 }
-#checkout > div .cost {
-  grid-template-columns: 50%;
+#checkout > div .row {
+  display: flex;
 }
-#checkout > div .cost #t1 h3 {
-  font-size: medium;
+#checkout > div h2 {
+  font-size: large;
+  margin-bottom: 10px;
 }
-#checkout > div .cost #t1 h4 {
+#checkout > div h3 {
   font-size: medium;
+  margin-bottom: 10px;
 }
-#checkout > div .cost #t2 h3 {
-  font-size: medium;
+#checkout > div .column {
+  flex: 50%;
+  padding: 10px;
+  margin-top: 36px;
 }
-#checkout > div .cost #t2 h4 {
+#checkout > div .column2 {
+  flex: 50%;
+  padding: 10px;
+  margin-left: 12vh;
+  margin-top: 36px;
+}
+#checkout > div .totalcost {
+  border-top: 1px solid rgb(2, 2, 2);
+}
+#checkout > div .totalcost .row1 {
+  display: flex;
+}
+#checkout > div .totalcost h2 {
+  font-size: large;
+  margin-bottom: 10px;
+}
+#checkout > div .totalcost h3 {
   font-size: medium;
+  margin-bottom: 10px;
+}
+#checkout > div .totalcost .column3 {
+  flex: 50%;
+  padding: 10px;
+  height: 300px;
+  margin-top: 36px;
+}
+#checkout > div .totalcost .column4 {
+  flex: 50%;
+  padding: 10px;
+  height: 300px;
+  margin-left: 12vh;
+  margin-top: 36px;
 }
