@@ -888,6 +888,11 @@ a {
 #reviews > div section img {
   width: 100%;
 }
+#reviews > div h1 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: xx-large;
+}
 #reviews > div .review-top {
   display: flex;
 }
@@ -928,6 +933,10 @@ a {
 #reviews > div .card .container button:active {
   filter: brightness(0.8);
 }
+#reviews > div .card .sides {
+  color: aliceblue;
+  margin-left: 12px;
+}
 #reviews > div .card ul li {
   padding: 10px 16px;
 }
@@ -961,9 +970,10 @@ a {
     grid-area: n6;
   }
 }
-#reviews h1 {
+#reviews .rating {
   margin-top: 16px;
   margin-bottom: 16px;
+  color: aliceblue;
   background-color: 20px #060606;
 }
 #reviews p {
@@ -1019,21 +1029,41 @@ a {
   margin-top: 16px;
 }
 #related > div .cards button {
-  border: 1px solid rgb(252, 249, 249);
-  background-color: #2166b6;
+  background-color: #315984;
   color: rgb(249, 249, 249);
   border-radius: 20px;
-  padding: 6px 10px;
+  margin-bottom: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
   margin-top: 16px;
   margin-left: 0;
-  margin-bottom: 12px;
   display: block;
   margin: 0 auto;
+}
+#related p {
+  margin-bottom: 16px;
+}
+#related .learn {
+  margin-top: 16px;
+  margin-bottom: 36px;
+  color: #2166b6;
 }
 @media (min-width: 768px) {
   #related #nt {
     grid-area: nt;
     color: #2166b6;
+  }
+  #related #nt h1 {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    font-size: xx-large;
+  }
+  #related #nt h3 {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    font-size: large;
   }
 }
 @media (min-width: 768px) {
@@ -1057,7 +1087,12 @@ a {
   }
 }
 #related h1 {
-  margin-top: 16px;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  font-size: larger;
+}
+#related h2 {
+  margin-top: 10px;
   margin-bottom: 16px;
   font-size: large;
 }
@@ -1075,6 +1110,7 @@ a {
     Hero-2
 ============= */
 #hero-2 {
+  margin-top: 5vh;
   background-image: url("../img/hero-2/hend.png");
   background-size: cover;
   height: 50vh;
@@ -1468,6 +1504,7 @@ a {
   height: 18.5px;
 }
 #checkout > div #x3 #cart1 .quanity p {
+  word-wrap: normal;
   margin-top: 10px;
   margin-left: 10px;
   margin-bottom: 10px;
@@ -1661,6 +1698,7 @@ a {
   margin-bottom: 10px;
 }
 #checkout > div .totalcost h3 {
+  word-wrap: normal;
   font-size: medium;
   margin-bottom: 10px;
 }
