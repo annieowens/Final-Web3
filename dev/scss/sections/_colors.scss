@@ -5,7 +5,8 @@
 #colors{
 
     background-image: url("../img/colors/e.jpg");
-    
+    margin-top: 26px;
+    margin-bottom: 26px;
     background-size: cover;
     height: 50vh;
     display: flex;
@@ -31,25 +32,25 @@
     } 
 
      img{
-        margin-top: 100px;
+        margin-top: 50px;
         margin-bottom: 40px;
         background-color: rgba(255, 255, 255, 0.515);
-        margin-right: 7vh;
+        width: 60%;
+        margin-left: 40px;
      }
 
-     h1{
-        margin-top: 10px;
-        margin-left: 50px;
-        color: #2D5983;
-     }
 
-     h2{
-        margin-top: 12px;
-        margin-left: 36px;
-        color: #183752;
-     }
-        
-    
+      h1 {
+        color:#2D5983;
+
+      }
+
+      h3 {
+       
+       color:#2D5983;
+      }
+
+      
     
 }
 

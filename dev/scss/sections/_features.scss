@@ -3,80 +3,23 @@
 ============= */
 
 #features{  
-
-    ul{
-        display: grid;
-        grid-template-columns: 16px auto 16px;
-        gap: 16px;
-    
-        li {
-            background-size: cover;
-            height: 50vh;
-            width: 100%;
-        }
-    
-        #c1 {
-            background-image: url("../img/features/c.png");
-            margin-left: 40px;
-        }
-    
-        #c2 {
-            background-image: url("../img/features/f.jpg");
-        }
-    
-        .pop{
-            h1{
-                color: #2D5983;
-                margin-top: 5vh;
-                margin-left: 81vh;
-                margin-right: 5vh;
-            }
-
-            h2{
-                color: #2D5983;
-                margin-top: 5vh;
-                margin-left: 81vh;
-                margin-right: 5vh;
-            }
-    
-           }  
-    
-           .functions{
-            h1{
-                color: #2D5983;
-                margin-top: 5vh;
-                margin-bottom: 51vh;
-                margin-right: 5vh;
-            }
-
-            h2{
-                color: #2D5983;
-                margin-top: 5vh;
-                margin-left: 1vh;
-                margin-right: 5vh;
-            }
-    
-           }
-       }
-    
-}
- /* =============
-    @include md{
-        height: 60vh;
-        background-position: left bottom;
+    @include md {
+        
+        grid-template-areas: ". features.";
     }
-
     @include xl{
-        height: 70vh;
+        grid-template-columns: auto 1040px auto;
+
     }
 
-    @include lg{
-        height: 70vh;
+    @include xxl {
+        grid-template-columns: auto 1440px auto;
+
     }
 
-    @include xxl{
-        height: 100vh;
-        background-position: center bottom;
-    }   
+    display: flex;
 
-============= */
+    img{
+        width: 100%;
+    }
+}

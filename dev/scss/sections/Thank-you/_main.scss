@@ -1,8 +1,17 @@
 /* =============
     main
 ============= */
+
 #main{
 
+    @include md{
+        scroll-margin-top: 100px;
+    }
+
+    @include xxl{
+        grid-template-columns: auto 1440px auto;
+    }
+    
     ul{
     display: flex;
     gap: 16px;
@@ -16,43 +25,42 @@
     #j1 {
         background-image: url("../img/cart/Group 6.svg");
         background-repeat: no-repeat;
-        margin-top: 5vh;
-        margin-left: 10vh;
+        background-position: center;
+        
     }
   
 
 }
   .thanks{
     color:#0d5e8d7f;
-    margin-left: 40vh;
-    margin-bottom: 16px;
+    text-align: center;
+    margin-top: 16px;
     font-size: xx-large;
 }
 .purchase{
     color:#0d5e8d7f;
-    margin-left: 25vh;
-    margin-bottom: 16px;
+    text-align: center;
+    margin-top: 16px;
     font-size: x-large;
 }
 .order{
     color:#0d5e8d7f;
-    margin-left: 30vh;
-    margin-bottom: 16px;
+    text-align: center;
+    margin-top: 16px;
     font-size: large;
 }
 .hello{
     color:#0d5e8d7f;
-    margin-left: 25vh;
-    margin-bottom: 16px;
+    text-align: center;
+    margin-top: 16px;
     font-size: medium;
 }
 .tracking{
     color:#0d5e8d7f;
-    margin-left: 27vh;
-    margin-bottom: 10vh;
+    text-align: center;
+    margin-top: 16px;
     font-size: medium;
-
-
+    margin-bottom: 46px;
 }
 
 }

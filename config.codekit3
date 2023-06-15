@@ -240,6 +240,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/features\/xfeat.png" : {
+      "ft" : 32768,
+      "iS" : 981448,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/features\/xfeat.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/gallery\/dom.png" : {
       "ft" : 32768,
       "iS" : 1822433,
@@ -527,11 +540,37 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/overview\/b.png" : {
+    "\/deploy\/img\/overview\/gorup.png" : {
+      "ft" : 32768,
+      "iS" : 561357,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/overview\/gorup.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/overview\/image3.png" : {
+      "ft" : 32768,
+      "iS" : 561357,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/overview\/image3.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/overview\/pick.png" : {
       "ft" : 32768,
       "iS" : 539288,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/overview\/b.png",
+      "oAP" : "\/deploy\/img\/overview\/pick.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
