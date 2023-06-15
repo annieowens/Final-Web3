@@ -11,6 +11,7 @@
     }
 
     >div{
+        margin-left: 36px;
         grid-area: footer;
 
         @include md{
@@ -19,7 +20,7 @@
             grid-template-areas: 
             "f1 f2"
             "f3 f4";
-            gap: 10px;
+            gap: 16px;
         }
 
         @include lg{
@@ -43,21 +44,14 @@
                 color: rgb(10, 10, 10);
                 font-size: rem-calc(20);
                 font-weight: 600;
+                margin-top: 32px;
                 margin-bottom: 16px;
-            }
 
-            p{
-                font-size: rem-calc(16);
-                font-weight: 600;
-                margin-bottom: 8px;
-            }
-
-
-            a:link, a:visited{
-                color: var(--blueInput);
-                &:hover, &:active{
-                    color: var(--white);
+                @include md{
+                    margin-top: 0;
                 }
+
+                
             }
         }   
 
@@ -78,19 +72,13 @@
                 }
             }
         } 
-
         #f3{
-            
             @include md{
                 grid-area: f3;
             }
 
-            @include lg{
-                text-align: right;
-            }
-
             h3{
-                color: rgb(11, 10, 10);
+                color: rgb(10, 10, 10);
                 font-size: rem-calc(20);
                 font-weight: 600;
                 margin-top: 32px;
@@ -100,18 +88,49 @@
                     margin-top: 0;
                 }
             }
+        }
+
+        #f4{
+            @include md{
+                grid-area: f4;
+            }
+
+            h3{
+                color: rgb(10, 10, 10);
+                font-size: rem-calc(20);
+                font-weight: 600;
+                margin-top: 32px;
+                margin-bottom: 16px;
+
+                @include md{
+                    margin-top: 0;
+                }
+            }
+        }
+
+        #f5{
+            
+            @include md{
+                grid-area: f5;
+            }
+
+            @include lg{
+                grid-area: f5;
+            }
+
+            
 
             ul{
                 display: flex;
                 @include lg{
-                    justify-content: flex-end;
+                    
 
                 }
                 li{
-                    margin-right: 16px;
+                    
 
                     @include xl{
-                        margin: 0 0 0 16px;
+                        justify-content: center;
                     }
 
                     a:link, a:visited{

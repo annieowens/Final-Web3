@@ -552,6 +552,7 @@ a {
   }
 }
 #footer > div {
+  margin-left: 36px;
   grid-area: footer;
 }
 @media (min-width: 768px) {
@@ -559,7 +560,7 @@ a {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: "f1 f2" "f3 f4";
-    gap: 10px;
+    gap: 16px;
   }
 }
 @media (min-width: 1024px) {
@@ -583,18 +584,13 @@ a {
   color: rgb(10, 10, 10);
   font-size: 1.25rem;
   font-weight: 600;
+  margin-top: 32px;
   margin-bottom: 16px;
 }
-#footer > div #f1 p {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-#footer > div #f1 a:link, #footer > div #f1 a:visited {
-  color: var(--blueInput);
-}
-#footer > div #f1 a:link:hover, #footer > div #f1 a:link:active, #footer > div #f1 a:visited:hover, #footer > div #f1 a:visited:active {
-  color: var(--white);
+@media (min-width: 768px) {
+  #footer > div #f1 h3 {
+    margin-top: 0;
+  }
 }
 @media (min-width: 768px) {
   #footer > div #f2 {
@@ -618,13 +614,8 @@ a {
     grid-area: f3;
   }
 }
-@media (min-width: 1024px) {
-  #footer > div #f3 {
-    text-align: right;
-  }
-}
 #footer > div #f3 h3 {
-  color: rgb(11, 10, 10);
+  color: rgb(10, 10, 10);
   font-size: 1.25rem;
   font-weight: 600;
   margin-top: 32px;
@@ -635,28 +626,47 @@ a {
     margin-top: 0;
   }
 }
-#footer > div #f3 ul {
-  display: flex;
+@media (min-width: 768px) {
+  #footer > div #f4 {
+    grid-area: f4;
+  }
+}
+#footer > div #f4 h3 {
+  color: rgb(10, 10, 10);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  #footer > div #f4 h3 {
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) {
+  #footer > div #f5 {
+    grid-area: f5;
+  }
 }
 @media (min-width: 1024px) {
-  #footer > div #f3 ul {
-    justify-content: flex-end;
+  #footer > div #f5 {
+    grid-area: f5;
   }
 }
-#footer > div #f3 ul li {
-  margin-right: 16px;
+#footer > div #f5 ul {
+  display: flex;
 }
 @media (min-width: 1200px) {
-  #footer > div #f3 ul li {
-    margin: 0 0 0 16px;
+  #footer > div #f5 ul li {
+    justify-content: center;
   }
 }
-#footer > div #f3 ul li a:link, #footer > div #f3 ul li a:visited {
+#footer > div #f5 ul li a:link, #footer > div #f5 ul li a:visited {
   color: rgb(216, 211, 141);
   font-size: 1.875rem;
   transition: 0.25s;
 }
-#footer > div #f3 ul li a:link:hover, #footer > div #f3 ul li a:link:active, #footer > div #f3 ul li a:visited:hover, #footer > div #f3 ul li a:visited:active {
+#footer > div #f5 ul li a:link:hover, #footer > div #f5 ul li a:link:active, #footer > div #f5 ul li a:visited:hover, #footer > div #f5 ul li a:visited:active {
   color: var(--blueInput);
 }
 
@@ -700,11 +710,11 @@ a {
   margin-left: 81vh;
   margin-right: 5vh;
 }
-#hero h4 {
+#hero .sheen {
   position: absolute;
+  margin-top: 10vh;
+  margin-left: 93vh;
   color: #183752;
-  margin-top: 12vh;
-  margin-right: 1vh;
 }
 
 /* =============
