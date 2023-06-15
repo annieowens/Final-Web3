@@ -824,6 +824,9 @@ a {
 /* =============
     Gallery
 ============= */
+#gallery {
+  margin-top: 16px;
+}
 #gallery ul {
   display: grid;
   grid-template-columns: 50% auto;
@@ -836,16 +839,20 @@ a {
 }
 #gallery ul #g1 {
   background-image: url("../img/gallery/g10.png");
-  margin-left: 40px;
+  width: 120%;
 }
 #gallery ul #g2 {
   background-image: url("../img/gallery/g11.png");
+  width: 80%;
+  margin-left: 100px;
 }
 #gallery ul #g3 {
   background-image: url("../img/gallery/g12.png");
+  width: 100%;
 }
 #gallery ul #g4 {
   background-image: url("../img/gallery/g13.png");
+  width: 120%;
 }
 
 /* =============
